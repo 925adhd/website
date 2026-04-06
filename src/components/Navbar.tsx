@@ -48,6 +48,12 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-1.5 sm:gap-2">
+            <Link
+              href="/free"
+              className="inline-flex items-center px-2.5 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-dark hover:text-brand-primary hover:bg-black/[.03] transition-all"
+            >
+              Free
+            </Link>
             <a
               href="https://app.925adhd.com/"
               className="inline-flex items-center px-2.5 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-primary/60 hover:text-brand-primary hover:bg-black/[.03] transition-all"
@@ -55,12 +61,6 @@ export default function Navbar() {
             >
               Log in
             </a>
-            <Link
-              href="/free"
-              className="inline-flex items-center px-2.5 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-dark hover:text-brand-primary hover:bg-black/[.03] transition-all"
-            >
-              Free
-            </Link>
             <a
               href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-[13px] font-semibold bg-brand-teal-dark text-white hover:bg-[#24a68e] transition-colors"
