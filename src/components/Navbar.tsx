@@ -16,23 +16,23 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-brand-warm/80 backdrop-blur-xl border-b border-brand-border">
-      <div className="max-w-[1120px] mx-auto px-5">
-        <div className="flex items-center justify-between h-[60px]">
+      <div className="max-w-[1120px] mx-auto px-3 sm:px-5">
+        <div className="flex items-center justify-between gap-2 h-[60px]">
           <Link
             href="/"
-            className="flex items-center gap-2.5 font-bold tracking-wide no-underline text-brand-primary"
+            className="flex items-center gap-2 font-bold tracking-wide no-underline text-brand-primary shrink-0"
             aria-label="925 ADHD Home"
           >
             <img
               src="/925-adhd-logo.png"
               alt="925 ADHD Logo"
-              width={30}
-              height={30}
+              width={28}
+              height={28}
               loading="eager"
               decoding="async"
               className="rounded-lg object-cover"
             />
-            <span className="text-[15px] font-bold">925 ADHD</span>
+            <span className="text-[14px] sm:text-[15px] font-bold whitespace-nowrap">925 ADHD</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
@@ -47,16 +47,16 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-0.5 sm:gap-2 shrink-0">
             <Link
               href="/free"
-              className="inline-flex items-center px-2.5 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-dark hover:text-brand-primary hover:bg-black/[.03] transition-all"
+              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-dark hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
             >
-              Free
+              Free Resources
             </Link>
             <a
               href="https://app.925adhd.com/"
-              className="inline-flex items-center px-2.5 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-primary/60 hover:text-brand-primary hover:bg-black/[.03] transition-all"
+              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-primary/60 hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
               aria-label="Login"
             >
               Log in

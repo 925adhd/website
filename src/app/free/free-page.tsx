@@ -67,30 +67,23 @@ export default function FreeHubPage() {
             >
               <Link
                 href={resource.href}
-                className="group block bg-white rounded-2xl border border-brand-border overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300"
+                className="group block bg-white rounded-2xl border border-brand-border p-6 md:p-7 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:border-brand-teal-dark/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
               >
-                {/* Emoji hero */}
-                <div className="aspect-[16/9] bg-brand-panel flex items-center justify-center">
-                  <span className="text-6xl">{resource.emoji}</span>
-                </div>
-
-                {/* Content */}
-                <div className="p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-bold text-brand-green bg-green-50 border border-green-200/40 px-3 py-1 rounded-full">
-                      {resource.category}
-                    </span>
-                  </div>
-                  <h2 className="text-[17px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors">
-                    {resource.title}
-                  </h2>
-                  <p className="text-sm text-brand-muted leading-relaxed line-clamp-3 mb-4">
-                    {resource.description}
-                  </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-dark group-hover:gap-2 transition-all">
-                    {resource.cta} <ArrowRight className="w-4 h-4" />
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">{resource.emoji}</span>
+                  <span className="text-xs font-bold text-brand-green bg-green-50 border border-green-200/40 px-3 py-1 rounded-full">
+                    {resource.category}
                   </span>
                 </div>
+                <h2 className="text-[18px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors">
+                  {resource.title}
+                </h2>
+                <p className="text-sm text-brand-muted leading-relaxed mb-5 flex-1">
+                  {resource.description}
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-dark group-hover:gap-2 transition-all">
+                  {resource.cta} <ArrowRight className="w-4 h-4" />
+                </span>
               </Link>
             </motion.div>
           ))}
