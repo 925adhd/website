@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion } from 'motion/react';
-import { CheckCircle, Star, ChevronDown } from 'lucide-react';
+import { CheckCircle, Star, ChevronDown, Gift } from 'lucide-react';
 
 const STRIPE_URL = 'https://buy.stripe.com/28E3cw1B33logABev67Zu02';
 
@@ -352,12 +353,12 @@ export default function HomePage() {
       <section className="py-10 md:py-16" aria-label="Newsletter signup">
         <div className="max-w-[1120px] mx-auto px-5">
           <motion.div {...fadeUp} className="max-w-[480px] mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-4">Free download</p>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-4">Free Guide</p>
             <h2 className="text-xl font-black tracking-tight mb-2">Not ready to buy yet?</h2>
             <p className="text-sm text-brand-primary/45 mb-6 leading-relaxed">
-              Get our Top 5 Fastest-Paying ADHD Side Hustles — free in your inbox. No spam, just one useful email.
+              Get our 5 ADHD-Friendly Side Hustles guide &mdash; free, instant access. No spam.
             </p>
-            <EmailCapture />
+            <GuideEmailCapture />
           </motion.div>
         </div>
       </section>
@@ -408,31 +409,30 @@ function FaqAccordion({ question, answer }: { question: string; answer: string }
   );
 }
 
-function EmailCapture() {
+function GuideEmailCapture() {
+  const router = useRouter();
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   async function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: '0e4fca47-83e4-4ee5-976d-8b1a8cb8ac02',
-        subject: 'New email subscriber - 925 ADHD',
-        from_name: 'Newsletter Signup',
-        email,
-      }),
-    });
-    if (res.ok) setSubmitted(true);
-  }
-
-  if (submitted) {
-    return (
-      <p className="text-brand-green font-semibold text-sm py-2">
-        {'✓'} You&apos;re in! Check your inbox soon.
-      </p>
-    );
+    if (!email.trim()) return;
+    setSending(true);
+    try {
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: '0e4fca47-83e4-4ee5-976d-8b1a8cb8ac02',
+          subject: 'Free guide download - 925 ADHD',
+          from_name: 'Free Guide Signup',
+          email,
+        }),
+      });
+    } catch {
+      // still redirect even if Web3Forms fails
+    }
+    router.push('/free/side-hustles');
   }
 
   return (
@@ -447,9 +447,11 @@ function EmailCapture() {
       />
       <button
         type="submit"
-        className="rounded-xl bg-brand-teal-dark text-white font-semibold px-5 py-3 text-sm hover:bg-[#24a68e] transition-colors shrink-0"
+        disabled={sending}
+        className="rounded-xl bg-brand-accent text-white font-semibold px-5 py-3 text-sm hover:bg-[#6d28d9] transition-colors shrink-0 inline-flex items-center gap-2 disabled:opacity-60"
       >
-        Send Me Ideas
+        <Gift className="w-4 h-4" />
+        Get Free Guide
       </button>
     </form>
   );

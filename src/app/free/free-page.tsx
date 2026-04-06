@@ -1,9 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
-import { Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -12,149 +11,91 @@ const fadeUp = {
   transition: { duration: 0.5 },
 };
 
-export default function FreePage() {
-  const [submitted, setSubmitted] = useState(false);
+const resources = [
+  {
+    href: '/free/energy-checker',
+    emoji: '\u26a1',
+    category: 'AI Tool',
+    title: 'Is This Worth My Energy?',
+    description:
+      'Paste any job, side hustle, or platform. Our AI breaks down the red flags, pay reality, and energy cost before you waste your time.',
+    cta: 'Try it free',
+  },
+  {
+    href: '/free/side-hustles',
+    emoji: '\ud83d\udcb0',
+    category: 'Free Guide',
+    title: '5 ADHD-Friendly Side Hustles',
+    description:
+      'Vetted starter guide with 5 side hustles picked for ADHD brains  — rated by energy, effort, and time to first dollar.',
+    cta: 'Get the guide',
+  },
+  {
+    href: '/free/best-adhd-products',
+    emoji: '\ud83c\udfaf',
+    category: 'Product Picks',
+    title: 'Best Products for ADHD',
+    description:
+      'Noise machines, planners, fidgets, and focus tools  — handpicked for ADHD adults. Honest picks, no gimmicks.',
+    cta: 'See the picks',
+  },
+];
 
-  const [email, setEmail] = useState('');
-  const [emailSent, setEmailSent] = useState(false);
-
-  async function handleEmailSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: '0e4fca47-83e4-4ee5-976d-8b1a8cb8ac02',
-        subject: 'Free tool early access signup - 925 ADHD',
-        from_name: 'Free Tool Waitlist',
-        email,
-      }),
-    });
-    if (res.ok) setEmailSent(true);
-  }
-
+export default function FreeHubPage() {
   return (
-    <>
-      {/* Hero */}
-      <section className="py-16 md:py-20 text-center">
-        <div className="max-w-[1120px] mx-auto px-5">
-          <motion.div {...fadeUp} className="mb-4">
-            <span className="inline-block rounded-full bg-brand-green/15 text-brand-green text-sm font-bold px-4 py-1.5 tracking-wide uppercase">
-              Free Tool
-            </span>
-          </motion.div>
+    <section className="py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-5">
+        {/* Header */}
+        <motion.div className="text-center mb-12" {...fadeUp}>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-primary mb-4">
+            Free Resources
+          </h1>
+          <p className="text-lg text-brand-muted max-w-2xl mx-auto">
+            Tools, guides, and picks built for ADHD brains. No paywalls, no tricks.
+          </p>
+        </motion.div>
 
-          <motion.h1
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-[clamp(32px,5vw,52px)] font-black text-brand-primary mb-5"
-          >
-            Is This Worth My Energy?
-          </motion.h1>
+        {/* Resource Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {resources.map((resource, i) => (
+            <motion.div
+              key={resource.href}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: i * 0.07 }}
+            >
+              <Link
+                href={resource.href}
+                className="group block bg-white rounded-2xl border border-brand-border overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300"
+              >
+                {/* Emoji hero */}
+                <div className="aspect-[16/9] bg-brand-panel flex items-center justify-center">
+                  <span className="text-6xl">{resource.emoji}</span>
+                </div>
 
-          <motion.p
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[clamp(16px,2vw,20px)] text-brand-primary/75 max-w-[640px] mx-auto leading-relaxed"
-          >
-            <strong className="text-brand-accent">Coming soon:</strong> Our AI scam-checker will analyze any job, side hustle, or platform and tell you if it&apos;s worth your time.
-          </motion.p>
+                {/* Content */}
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-bold text-brand-green bg-green-50 border border-green-200/40 px-3 py-1 rounded-full">
+                      {resource.category}
+                    </span>
+                  </div>
+                  <h2 className="text-[17px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors">
+                    {resource.title}
+                  </h2>
+                  <p className="text-sm text-brand-muted leading-relaxed line-clamp-3 mb-4">
+                    {resource.description}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-dark group-hover:gap-2 transition-all">
+                    {resource.cta} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
-      </section>
-
-      {/* Early Access Signup */}
-      <section className="pb-16">
-        <div className="max-w-[720px] mx-auto px-5">
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="rounded-2xl border border-brand-border bg-brand-warm p-8 shadow-[0_4px_24px_rgba(0,0,0,0.06)] text-center"
-          >
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-accent/10 mb-4">
-              <Sparkles className="w-7 h-7 text-brand-accent" />
-            </div>
-            <h2 className="text-xl font-bold text-brand-primary mb-2">
-              Get Early Access
-            </h2>
-            <p className="text-brand-primary/65 max-w-[460px] mx-auto leading-relaxed mb-6">
-              We&apos;re building an AI-powered scam checker that analyzes any gig or opportunity in seconds.
-              Drop your email to be first in line when it launches.
-            </p>
-
-            {!emailSent ? (
-              <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-[420px] mx-auto">
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  className="flex-1 rounded-xl border border-brand-border bg-white px-4 py-3 text-sm text-brand-primary placeholder:text-brand-muted/50 outline-none focus:ring-2 focus:ring-brand-accent/30 transition-shadow"
-                />
-                <button
-                  type="submit"
-                  className="rounded-xl bg-brand-teal-dark text-white font-bold px-5 py-3 text-sm hover:bg-[#24a68e] transition-colors shrink-0 inline-flex items-center gap-2"
-                >
-                  <Sparkles className="w-4 h-4" />
-                  Notify Me
-                </button>
-              </form>
-            ) : (
-              <p className="text-brand-green font-bold text-sm py-2">
-                {'✓'} You&apos;re on the list! We&apos;ll email you when it&apos;s ready.
-              </p>
-            )}
-
-            <p className="text-xs text-brand-primary/45 mt-4">No spam. Just one email when the tool goes live.</p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="pb-20">
-        <div className="max-w-[720px] mx-auto px-5">
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="rounded-2xl bg-brand-panel border border-brand-border p-8 md:p-10"
-          >
-            <h3 className="text-[clamp(22px,3vw,28px)] font-bold text-brand-primary mb-4">
-              Want specifics, not patterns?
-            </h3>
-            <div className="space-y-4 text-[17px] leading-relaxed text-brand-primary/75 mb-8">
-              <p>
-                AI can spot patterns, but it can&apos;t verify receipts. This tool gives
-                you a starting point, not certainty.
-              </p>
-              <p>
-                Members get 70+ gigs already tested by real people who actually got paid,
-                so you don&apos;t have to gamble your time.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/#pricing"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-white font-bold py-3.5 px-6 hover:bg-[#24a68e] transition-colors"
-                >
-                  See the Vetted List &mdash; $9.25
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="/"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-border bg-brand-warm text-brand-primary font-bold py-3.5 px-6 hover:bg-brand-panel transition-colors"
-                >
-                  Learn more about 925 ADHD
-                </Link>
-              </div>
-              <p className="inline-flex items-center gap-1.5 text-xs font-bold text-[#92400e]">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                30-Day Money-Back Guarantee
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
