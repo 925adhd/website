@@ -222,7 +222,7 @@ export default function HomePage() {
             <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-teal-dark mb-3">Testimonials</p>
             <h2 className="text-[22px] md:text-[clamp(26px,3.5vw,38px)] tracking-[-0.02em] font-black">What Members Are Saying</h2>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="flex sm:grid sm:grid-cols-3 gap-6 sm:gap-8 -mx-5 px-5 sm:mx-0 sm:px-0 overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {[
               { avatar: '/morgan-avatar.webp', name: 'Morgan', location: 'Leitchfield, KY', date: 'September 17, 2025', text: "It\u2019s like if r/beermoney made an app for ADHDers.", rating: 5 },
               { avatar: '/danii-avatar.webp', name: 'Danii', location: 'Bowling Green, KY', date: 'June 5, 2025', text: 'Feels like a shortcut for my brain. Exactly what I needed.', rating: 5 },
@@ -234,7 +234,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="text-center"
+                className="text-center shrink-0 w-[85%] sm:w-auto snap-center"
               >
                 <div className="flex items-center justify-center gap-0.5 mb-4">
                   {Array.from({ length: review.rating }).map((_, s) => (
