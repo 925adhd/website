@@ -48,3 +48,18 @@ next-env.d.ts
 
 # claude code
 .claude/
+
+# local-only docs
+DESIGN_SYSTEM.md
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# logs
+*.log

@@ -206,7 +206,7 @@ function BlogEmailCapture() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: '0e4fca47-83e4-4ee5-976d-8b1a8cb8ac02',
+        access_key: 'dfb5a758-6041-45a0-b76d-6ee784a406ec',
         subject: 'New blog subscriber - 925 ADHD',
         from_name: 'Blog Email Signup',
         email,
