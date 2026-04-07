@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import {
@@ -82,30 +82,30 @@ const hustles = [
   },
   {
     number: 3,
-    name: 'Focusmate',
-    tagline: 'Body doubling that actually works',
-    rate: 'Free (3 sessions/week) or $9/mo',
+    name: 'Respondent.io',
+    tagline: 'The highest-paying gig nobody talks about',
+    rate: '$75\u2013$200/hr (30\u201360 min studies)',
     icon: Zap,
     color: 'brand-teal-dark',
     bgColor: 'bg-teal-50',
     borderColor: 'border-teal-200/50',
     iconBg: 'bg-teal-100',
-    link: 'https://www.focusmate.com/',
+    link: 'https://www.respondent.io/',
     whyAdhd: [
-      'Someone is "there"  — your brain behaves better',
-      'Scheduled sessions create external accountability',
-      'Works for any task  — work, cleaning, studying',
-      'Breaks initiation paralysis instantly',
+      'One-off sessions  — no long-term commitment to forget about',
+      'Novel + high stakes = your brain actually shows up',
+      'Just talk about your job or habits  — no skills needed',
+      'Pay is so high a single study can beat a week of surveys',
     ],
     howToStart: [
-      'Sign up for free (no credit card needed)',
-      'Book a 25 or 50-minute session',
-      'Show up, say what you\u2019re working on, work quietly',
-      'Repeat whenever you need to start something hard',
+      'Sign up free and fill out your profile honestly',
+      'Browse studies that match your job/industry',
+      'Apply with a short answer  — be specific, not generic',
+      'Get accepted, hop on a Zoom call, get paid via PayPal',
     ],
-    energyLevel: 'Any',
-    timeToFirstDollar: 'Productivity tool  — helps you earn more at everything else',
-    bestFor: 'When you can\u2019t start the thing you know you need to do',
+    energyLevel: 'Low',
+    timeToFirstDollar: '1\u20133 weeks (depends on study matches)',
+    bestFor: 'Anyone with a job or hobby companies want to research',
   },
   {
     number: 4,
@@ -167,6 +167,12 @@ export default function SideHustlesPage() {
   const [unlocked, setUnlocked] = useState(false);
   const [email, setEmail] = useState('');
   const [sending, setSending] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && sessionStorage.getItem('guide_unlocked') === '1') {
+      setUnlocked(true);
+    }
+  }, []);
 
   async function handleUnlock(e: React.FormEvent) {
     e.preventDefault();

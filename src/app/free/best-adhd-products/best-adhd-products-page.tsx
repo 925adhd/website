@@ -2,166 +2,267 @@
 
 import { motion } from 'motion/react';
 import Link from 'next/link';
-import { ArrowRight, ShieldCheck, ExternalLink } from 'lucide-react';
+import {
+  ArrowRight,
+  ShieldCheck,
+  Headphones,
+  Notebook,
+  Timer,
+  Sparkles,
+  Lightbulb,
+  Music2,
+  Zap,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 const fadeUp = {
-  initial: { opacity: 0, y: 24 },
+  initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.5 },
+  transition: { duration: 0.4 },
 };
 
-/**
- * Update `url` with your Amazon affiliate tag once you join
- * Amazon Associates. Append ?tag=925adhd-20
- */
-const categories = [
+type Product = {
+  name: string;
+  price: string;
+  url: string;
+  hook: string;
+  quickHits: string[];
+  badge?: string;
+  isAffiliate?: boolean;
+  image?: string;
+};
+
+type Category = {
+  id: string;
+  title: string;
+  icon: LucideIcon;
+  chipBg: string;
+  chipText: string;
+  cardBorder: string;
+  cardHover: string;
+  buttonBg: string;
+  priceBg: string;
+  products: Product[];
+};
+
+const categories: Category[] = [
   {
+    id: 'noise',
     title: 'Focus & Noise',
-    emoji: '\ud83c\udfa7',
+    icon: Headphones,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
-        name: 'LectroFan White Noise Machine',
-        price: '~$50',
-        url: 'https://www.amazon.com/dp/B00MY8V86Q',
-        why: 'Masks distracting sounds with 20 fan/noise options. No loops &mdash; your brain won\'t notice patterns.',
-        bestFor: 'Work-from-home focus, sleep, sensory regulation',
+        name: 'Magicteam White Noise Machine',
+        price: '$20',
+        url: 'https://amzn.to/4vgtso9',
+        isAffiliate: true,
+        image: '/amazon/magicteam-white-noise.webp',
+        hook: 'Set it and your brain finally shuts up.',
+        quickHits: ['20 non-looping sounds', '32 volume levels', 'Sleep timer + memory'],
       },
       {
         name: 'Loop Quiet Earplugs',
-        price: '~$25',
-        url: 'https://www.amazon.com/dp/B0B1NFJFSK',
-        why: 'Reduces noise by 24dB without blocking everything. Comfortable for hours. Discreet enough for the office.',
-        bestFor: 'Overstimulation, open offices, social events',
+        price: '$25',
+        url: 'https://amzn.to/4mje6LI',
+        isAffiliate: true,
+        image: '/amazon/loop-quiet-earplugs.webp',
+        hook: 'Cheap cheat code for sensory overload.',
+        quickHits: ['Cuts 24dB', 'Invisible in your ear', 'Good for concerts too'],
+        badge: 'Top pick',
       },
       {
-        name: 'Sony WH-1000XM5 Headphones',
-        price: '~$350',
-        url: 'https://www.amazon.com/dp/B0BX2L8PBT',
-        why: 'Industry-leading noise canceling. 30-hour battery. Comfortable for all-day wear.',
-        bestFor: 'Deep focus sessions, travel, blocking everything out',
+        name: 'Sony WH-1000XM5',
+        price: '$250',
+        url: 'https://amzn.to/3O2GGV1',
+        isAffiliate: true,
+        image: '/amazon/sony-wh-1000xm5.webp',
+        hook: 'The "turn the whole world off" headphones.',
+        quickHits: ['Best noise canceling on Earth', '30hr battery', 'Pillow-soft all day'],
       },
     ],
   },
   {
+    id: 'planners',
     title: 'Planners & Organization',
-    emoji: '\ud83d\udcd3',
+    icon: Notebook,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
-      {
-        name: 'Clever Fox Planner Pro',
-        price: '~$26',
-        url: 'https://www.amazon.com/dp/B07FMQ2WJZ',
-        why: 'Undated (no guilt for skipping days), goal-focused, and visually clean. Weekly + monthly layouts.',
-        bestFor: 'ADHD adults who want structure without rigidity',
-      },
       {
         name: 'Panda Planner',
-        price: '~$25',
-        url: 'https://www.amazon.com/dp/B01LXBGRY3',
-        why: 'Science-based layout with gratitude, priorities, and reflection. Designed for focus and happiness.',
-        bestFor: 'People who need emotional regulation alongside planning',
+        price: '$17',
+        url: 'https://amzn.to/4bW9SWO',
+        isAffiliate: true,
+        image: '/amazon/panda-planner.webp',
+        hook: 'A planner that actually asks how you feel.',
+        quickHits: ['Gratitude + priorities', 'Science-backed layout', 'Emotional regulation friendly'],
       },
       {
-        name: 'Rocketbook Fusion Smart Notebook',
-        price: '~$35',
-        url: 'https://www.amazon.com/dp/B07CZKLQ8R',
-        why: 'Write, scan to cloud, wipe clean, reuse. 7 page styles. Infinite notebook.',
-        bestFor: 'ADHD brains who start 50 notebooks and finish zero',
+        name: 'Clever Fox Planner Pro',
+        price: '$40',
+        url: 'https://amzn.to/4sQPD2K',
+        isAffiliate: true,
+        image: '/amazon/clever-fox-planner-pro.webp',
+        hook: 'Undated. Zero shame for the days you skip.',
+        quickHits: ['Goal-focused layout', 'Weekly + monthly', 'Picks up when you do'],
+        badge: 'Top pick',
+      },
+      {
+        name: 'Rocketbook Fusion',
+        price: '$40',
+        url: 'https://amzn.to/48AkBnA',
+        isAffiliate: true,
+        image: '/amazon/rocketbook-fusion.webp',
+        hook: 'One notebook. Infinite restarts.',
+        quickHits: ['Write, scan, wipe, reuse', '7 page styles', 'Cloud sync'],
       },
     ],
   },
   {
+    id: 'timers',
     title: 'Timers & Time Awareness',
-    emoji: '\u23f1\ufe0f',
+    icon: Timer,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
-        name: 'Time Timer MOD (60-min)',
-        price: '~$35',
-        url: 'https://www.amazon.com/dp/B003H837GS',
-        why: 'Visual countdown &mdash; you SEE time disappearing. No math, no guessing. The go-to for time blindness.',
-        bestFor: 'Task transitions, Pomodoro, keeping meetings on track',
+        name: 'Ticktime Cube',
+        price: '$18',
+        url: 'https://amzn.to/3Of7Rf8',
+        isAffiliate: true,
+        image: '/amazon/ticktime-cube.webp',
+        hook: 'Flip it and you already started.',
+        quickHits: ['Zero buttons', '6 presets', 'Friction-free'],
       },
       {
-        name: 'Cube Timer (Ticktime)',
-        price: '~$25',
-        url: 'https://www.amazon.com/dp/B09NNCQRN3',
-        why: 'Flip to start &mdash; 1, 3, 5, 10, 15, 25 min presets. No buttons. Friction-free.',
-        bestFor: 'Quick focus sprints, the 10-3 rule, cooking timers',
+        name: 'Time Timer MOD (60-min)',
+        price: '$20',
+        url: 'https://amzn.to/3PU9dww',
+        isAffiliate: true,
+        image: '/amazon/time-timer-mod.webp',
+        hook: 'Finally, time you can actually SEE.',
+        quickHits: ['Visual countdown', 'No math', 'Cures time blindness'],
+        badge: 'Top pick',
       },
       {
         name: 'Amazon Echo Dot',
-        price: '~$50',
-        url: 'https://www.amazon.com/dp/B09B8V1LZ3',
-        why: '"Alexa, set a timer for 10 minutes" &mdash; voice timers without touching your phone.',
-        bestFor: 'Hands-free reminders, routine anchoring, morning alarms',
+        price: '$50',
+        url: 'https://amzn.to/4vaPatL',
+        isAffiliate: true,
+        image: '/amazon/amazon-echo-dot.webp',
+        hook: '"Alexa, set a timer" — done.',
+        quickHits: ['No phone needed', 'Voice reminders', 'Great for routines'],
       },
     ],
   },
   {
+    id: 'fidgets',
     title: 'Fidgets & Regulation',
-    emoji: '\ud83e\udd32',
+    icon: Sparkles,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
-        name: 'Speks Magnetic Balls',
-        price: '~$25',
-        url: 'https://www.amazon.com/dp/B074M6BPPC',
-        why: 'Quiet, desk-friendly fidget. Build shapes during meetings. Satisfying without being distracting.',
-        bestFor: 'Meetings, phone calls, thinking time',
+        name: "Tom's Flippy Chain",
+        price: '$10',
+        url: 'https://amzn.to/41olWdk',
+        isAffiliate: true,
+        image: '/amazon/toms-flippy-chain.webp',
+        hook: 'The most discreet fidget ever made.',
+        quickHits: ['Pocket-sized', 'Nearly indestructible', 'Totally silent'],
       },
       {
-        name: 'Tom\'s Fidgets Flippy Chain',
-        price: '~$9',
-        url: 'https://www.amazon.com/dp/B01MAYBQKA',
-        why: 'Silent, pocket-sized, nearly indestructible. The most discreet fidget available.',
-        bestFor: 'Work, class, public settings where subtlety matters',
+        name: 'Silicone Magnetic Fidget Balls (4-pack)',
+        price: '$10',
+        url: 'https://amzn.to/4soweFk',
+        isAffiliate: true,
+        image: '/amazon/silicone-magnetic-balls.webp',
+        hook: 'Desk fidget people actually keep using.',
+        quickHits: ['Silent + textured', '4 in a pack', 'Stupidly satisfying'],
+        badge: 'Top pick',
       },
       {
-        name: 'Weighted Lap Pad (5 lbs)',
-        price: '~$30',
-        url: 'https://www.amazon.com/dp/B07H2WL3XG',
-        why: 'Deep pressure calms the nervous system. Like a weighted blanket for your desk.',
-        bestFor: 'Desk work, overwhelm days, grounding during stressful tasks',
+        name: "L'AGRATY Weighted Lap Blanket (5 lbs)",
+        price: '$22',
+        url: 'https://amzn.to/4mh5IMx',
+        isAffiliate: true,
+        image: '/amazon/lagraty-weighted-lap-blanket.webp',
+        hook: 'A weighted blanket sized for your lap.',
+        quickHits: ['Deep pressure calm', 'Cooling + washable', 'Portable 29" x 24"'],
       },
     ],
   },
   {
+    id: 'lighting',
     title: 'Focus Lighting',
-    emoji: '\ud83d\udca1',
+    icon: Lightbulb,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
-        name: 'BenQ ScreenBar Monitor Light',
-        price: '~$110',
-        url: 'https://www.amazon.com/dp/B076VNFZJG',
-        why: 'Lights your desk without screen glare. Auto-dimming. Reduces eye strain during hyperfocus.',
-        bestFor: 'Late-night work, eye fatigue, creating a focus zone',
+        name: 'Govee RGBIC LED Strip (16.4ft)',
+        price: '$14',
+        url: 'https://amzn.to/4mbNb4g',
+        isAffiliate: true,
+        image: '/amazon/govee-led-strip.webp',
+        hook: 'Cheapest dopamine upgrade ever.',
+        quickHits: ['Color-code your moods', 'App + music sync', 'Ridiculously fun'],
       },
       {
-        name: 'Govee Smart LED Light Strip',
-        price: '~$15',
-        url: 'https://www.amazon.com/dp/B09B7NQ5YG',
-        why: 'Color-code your workspace &mdash; blue for focus, warm for winding down. Cheap dopamine hit.',
-        bestFor: 'Mood lighting, routine anchoring, workspace energy shifts',
+        name: 'BenQ ScreenBar',
+        price: '$110',
+        url: 'https://amzn.to/41gErR1',
+        isAffiliate: true,
+        image: '/amazon/benq-screenbar.webp',
+        hook: 'The lamp that knows when your eyes hurt.',
+        quickHits: ['Auto-dimming', 'Zero glare', 'Late-night friendly'],
+        badge: 'Top pick',
       },
     ],
   },
   {
-    title: 'Audio & Focus Music',
-    emoji: '\ud83c\udfb5',
+    id: 'audio',
+    title: 'Focus Music',
+    icon: Music2,
+    chipBg: 'bg-green-100',
+    chipText: 'text-brand-green',
+    cardBorder: 'border-brand-border',
+    cardHover: 'hover:border-brand-primary/30 hover:shadow-[0_8px_30px_rgba(15,23,42,0.08)]',
+    buttonBg: 'bg-brand-primary hover:bg-[#1e293b]',
+    priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
         name: 'Brain.fm',
         price: '$7/mo',
         url: 'https://www.brain.fm/925adhd',
-        why: 'AI-generated music designed to help you focus. Not a playlist &mdash; uses neural phase-locking technology.',
-        bestFor: 'Deep work, writing, coding, sustained focus',
         isAffiliate: true,
-      },
-      {
-        name: 'Apple AirPods Pro 2',
-        price: '~$250',
-        url: 'https://www.amazon.com/dp/B0D1XD1ZV3',
-        why: 'Active noise canceling + transparency mode. Switch between blocking everything and hearing what matters.',
-        bestFor: 'On-the-go focus, commuting, quick context switches',
+        image: '/amazon/brain-fm.webp',
+        hook: 'Music literally engineered for your focus.',
+        quickHits: ['Neural phase-locking', 'Not a playlist', 'Free trial'],
+        badge: 'Top pick',
       },
     ],
   },
@@ -169,13 +270,13 @@ const categories = [
 
 export default function BestAdhdProductsPage() {
   return (
-    <article className="py-12 md:py-20">
-      <div className="max-w-[1120px] mx-auto px-5">
+    <article className="bg-gradient-to-b from-stone-50 via-white to-stone-50">
+      <div className="max-w-[1120px] mx-auto px-5 pt-8 md:pt-12 pb-20 md:pb-28">
         {/* Back link */}
-        <motion.div className="mb-8" {...fadeUp}>
+        <motion.div className="mb-6" {...fadeUp}>
           <Link
             href="/free"
-            className="inline-flex items-center gap-2 text-sm font-bold text-brand-teal-dark hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-sm font-bold text-brand-primary/70 hover:text-brand-primary hover:gap-3 transition-all"
           >
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Free Resources
@@ -183,102 +284,177 @@ export default function BestAdhdProductsPage() {
         </motion.div>
 
         {/* Hero */}
-        <motion.header className="max-w-[780px] mx-auto text-center mb-10" {...fadeUp}>
-          <span className="inline-block text-xs font-extrabold text-brand-green bg-green-50 border border-green-200/40 px-4 py-1.5 rounded-full mb-4">
+        <motion.header className="max-w-3xl mb-10" {...fadeUp}>
+          <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-dark bg-teal-100 px-3 py-1.5 rounded-full mb-5">
             Product Picks
           </span>
-          <h1 className="text-3xl md:text-[44px] font-extrabold tracking-tight text-brand-primary leading-[1.15] mb-5">
-            Best Products for ADHD Adults (2026)
+          <h1 className="text-4xl md:text-[52px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-4">
+            Best products for ADHD adults.
           </h1>
-          <p className="text-brand-muted max-w-[560px] mx-auto leading-relaxed">
-            Handpicked tools that actually help &mdash; not gimmicks. Every product here is
-            something we&apos;d recommend to a friend with ADHD.
+          <p className="text-lg text-brand-muted leading-relaxed max-w-xl">
+            A short list, grouped by category. Everything here is something we
+            use or have tested.
           </p>
         </motion.header>
 
+        {/* Category jump chips */}
+        <motion.nav
+          className="flex flex-wrap justify-center gap-2 mb-12 md:mb-14"
+          {...fadeUp}
+          aria-label="Jump to category"
+        >
+          {categories.map((c) => {
+            const Icon = c.icon;
+            return (
+              <a
+                key={c.id}
+                href={`#${c.id}`}
+                className="inline-flex items-center gap-1.5 text-xs font-bold px-3.5 py-2 rounded-full bg-white border border-brand-border text-brand-primary/80 hover:border-brand-primary/30 hover:text-brand-primary hover:-translate-y-0.5 hover:shadow-sm transition-all"
+              >
+                <Icon className="w-3.5 h-3.5" />
+                {c.title}
+              </a>
+            );
+          })}
+        </motion.nav>
+
         {/* Disclosure */}
         <motion.div
-          className="max-w-[780px] mx-auto mb-10 rounded-xl border border-brand-border bg-brand-panel/50 px-5 py-3 text-xs text-brand-muted"
+          className="max-w-2xl mx-auto mb-12 rounded-xl border border-brand-border bg-white/60 px-5 py-3 text-xs text-brand-muted text-center"
           {...fadeUp}
         >
-          <strong>Disclosure:</strong> Some links on this page are affiliate links.
-          If you buy through them, we may earn a small commission at no extra cost to you.
-          We only recommend products we genuinely believe help ADHD adults.
+          <strong className="text-brand-primary/70">Heads up:</strong> some links are
+          affiliates. We only share stuff we&apos;d buy ourselves.
         </motion.div>
 
         {/* Categories */}
-        <div className="max-w-[780px] mx-auto">
-          {categories.map((category, ci) => (
-            <motion.div
-              key={category.title}
-              {...fadeUp}
-              transition={{ duration: 0.5, delay: 0.05 * ci }}
-              className="mb-12"
-            >
-              <h2 className="text-2xl font-extrabold text-brand-primary mb-6 flex items-center gap-3">
-                <span className="text-2xl">{category.emoji}</span>
-                {category.title}
-              </h2>
-
-              <div className="space-y-4">
-                {category.products.map((product) => (
-                  <a
-                    key={product.name}
-                    href={product.url}
-                    target="_blank"
-                    rel={product.isAffiliate ? 'nofollow sponsored noopener' : 'nofollow noopener'}
-                    className="group block rounded-2xl border border-brand-border bg-white p-5 hover:border-brand-teal-dark/30 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-0.5 transition-all duration-300"
+        <div className="space-y-16 md:space-y-20">
+          {categories.map((category, ci) => {
+            const Icon = category.icon;
+            return (
+              <motion.section
+                key={category.id}
+                id={category.id}
+                {...fadeUp}
+                transition={{ duration: 0.4, delay: 0.03 * ci }}
+                className="scroll-mt-24"
+              >
+                {/* Category header */}
+                <div className="flex items-center gap-3 mb-6 md:mb-8">
+                  <span
+                    aria-hidden
+                    className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${category.chipBg} ${category.chipText}`}
                   >
-                    <div className="flex items-start justify-between gap-4 mb-2">
-                      <h3 className="text-[16px] font-extrabold text-brand-primary group-hover:text-brand-teal-dark transition-colors">
-                        {product.name}
-                      </h3>
-                      <span className="text-sm font-bold text-brand-green whitespace-nowrap">
-                        {product.price}
-                      </span>
-                    </div>
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-black tracking-[-0.01em] text-brand-primary">
+                    {category.title}
+                  </h2>
+                </div>
 
-                    <p className="text-sm text-brand-muted leading-relaxed mb-3">
-                      {product.why}
-                    </p>
+                {/* Product cards grid */}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+                  {category.products.map((product) => (
+                    <motion.a
+                      key={product.name}
+                      href={product.url}
+                      target="_blank"
+                      rel={product.isAffiliate ? 'nofollow sponsored noopener' : 'nofollow noopener'}
+                      whileHover={{ y: -4 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                      className={`group relative flex flex-col rounded-2xl border-2 ${category.cardBorder} bg-white p-5 md:p-6 shadow-[0_2px_10px_rgba(0,0,0,0.03)] ${category.cardHover} transition-all duration-200`}
+                    >
+                      {/* Badge */}
+                      {product.badge && (
+                        <span className={`absolute -top-2.5 left-5 text-[10px] font-black uppercase tracking-[0.1em] ${category.chipBg} ${category.chipText} px-2.5 py-1 rounded-full border-2 border-white shadow-sm`}>
+                          {product.badge}
+                        </span>
+                      )}
 
-                    <div className="flex items-center justify-between">
-                      <p className="text-xs text-brand-muted/70">
-                        <strong className="text-brand-primary/60">Best for:</strong>{' '}
-                        {product.bestFor}
+                      {/* Product image */}
+                      {product.image && (
+                        <div className="mb-4 -mx-1 flex items-center justify-center rounded-xl bg-brand-canvas/60 p-3">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={product.image}
+                            alt={product.name}
+                            width={200}
+                            height={200}
+                            loading="lazy"
+                            className="h-32 w-auto object-contain"
+                          />
+                        </div>
+                      )}
+
+                      {/* Price pill */}
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <h3 className="text-[17px] font-black text-brand-primary leading-tight pr-2">
+                          {product.name}
+                        </h3>
+                        <span className={`text-sm font-black ${category.priceBg} px-2.5 py-1 rounded-lg whitespace-nowrap`}>
+                          {product.price}
+                        </span>
+                      </div>
+
+                      {/* Hook */}
+                      <p className="text-sm font-bold text-brand-primary/80 mb-4 leading-snug">
+                        {product.hook}
                       </p>
-                      <ExternalLink className="w-3.5 h-3.5 text-brand-teal-dark opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+
+                      {/* Quick hits */}
+                      <ul className="space-y-1.5 mb-5 flex-1">
+                        {product.quickHits.map((hit) => (
+                          <li key={hit} className="flex items-start gap-2 text-xs text-brand-muted">
+                            <Zap className={`w-3 h-3 mt-0.5 shrink-0 ${category.chipText}`} />
+                            <span>{hit}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* CTA button */}
+                      <span
+                        className="inline-flex items-center justify-center gap-1.5 w-full text-sm font-extrabold text-brand-teal-dark bg-white border-2 border-brand-teal-dark/30 hover:border-brand-teal-dark hover:bg-brand-teal-dark/[.04] px-4 py-2.5 rounded-xl transition-colors group-hover:gap-2.5"
+                      >
+                        Check it out
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    </motion.a>
+                  ))}
+                </div>
+              </motion.section>
+            );
+          })}
         </div>
 
-        {/* CTA */}
+        {/* Final CTA */}
         <motion.div
-          className="max-w-[780px] mx-auto mt-16 rounded-2xl border border-brand-border bg-brand-panel p-8 md:p-10 text-center"
+          className="mt-20 md:mt-28 rounded-3xl border-2 border-brand-border bg-gradient-to-br from-brand-primary to-[#1e293b] p-8 md:p-10 text-center relative overflow-hidden"
           {...fadeUp}
         >
-          <p className="text-xl font-extrabold text-brand-primary mb-2">
-            Want ADHD-friendly income streams too?
-          </p>
-          <p className="text-brand-muted mb-6 max-w-lg mx-auto">
-            70+ vetted ways to earn online &mdash; tagged by energy level, effort, and payout speed.
-            Built for brains like yours.
-          </p>
-          <Link
-            href="/#pricing"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-white font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#24a68e] hover:-translate-y-0.5 transition-all"
-          >
-            Get Instant Access &mdash; $9.25
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <p className="inline-flex items-center gap-1.5 text-xs font-bold text-[#92400e] mt-3">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            30-Day Money-Back Guarantee
-          </p>
+          <div className="absolute -top-16 -right-16 h-56 w-56 rounded-full bg-brand-accent/20 blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-brand-green/20 blur-3xl" />
+          <div className="relative">
+            <p className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-green bg-brand-green/10 border border-brand-green/20 px-3 py-1.5 rounded-full mb-5">
+              One more thing
+            </p>
+            <h2 className="text-2xl md:text-3xl font-black text-white leading-tight mb-3 max-w-xl mx-auto">
+              Want 70+ ADHD-friendly ways to actually <span className="text-brand-green">pay for</span> this stuff?
+            </h2>
+            <p className="text-white/60 mb-7 max-w-lg mx-auto">
+              Tagged by energy, effort, and payout speed. Built for brains like yours.
+            </p>
+            <Link
+              href="/#pricing"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-green text-brand-primary font-black text-[15px] shadow-[0_4px_20px_rgba(34,197,94,0.35)] hover:bg-[#4ade80] hover:-translate-y-0.5 transition-all"
+            >
+              Get Instant Access · $9.25
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <p className="flex items-center justify-center gap-1.5 text-xs font-bold text-brand-green/80 mt-5">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              30-Day Money-Back Guarantee
+            </p>
+          </div>
         </motion.div>
       </div>
     </article>
