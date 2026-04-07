@@ -124,7 +124,7 @@ export default function HomePage() {
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-[22px] md:text-[28px] font-black tracking-tight text-brand-primary">{stat.value}</div>
-                <div className="text-[11px] md:text-[13px] font-medium text-brand-primary/40 mt-0.5">{stat.label}</div>
+                <div className="text-[11px] md:text-[13px] font-medium text-brand-primary/70 mt-0.5">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -141,7 +141,10 @@ export default function HomePage() {
                   <img
                     src={src}
                     alt={`Dashboard screenshot ${i + 1}`}
-                    loading="lazy"
+                    width={471}
+                    height={330}
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    fetchPriority={i === 0 ? 'high' : undefined}
                     decoding="async"
                     className="w-full h-full object-cover object-top"
                   />

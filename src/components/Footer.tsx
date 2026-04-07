@@ -68,13 +68,13 @@ export default function Footer() {
   const yearDisplay = currentYear > startYear ? `${startYear}-${currentYear}` : `${startYear}`;
 
   return (
-    <footer className={`relative border-t border-brand-border pt-10 ${isHome ? 'pb-20 md:pb-10' : 'pb-10'} text-brand-primary/40 overflow-x-clip`}>
+    <footer className={`relative border-t border-brand-border pt-10 ${isHome ? 'pb-20 md:pb-10' : 'pb-10'} text-brand-primary/70 overflow-x-clip`}>
       <div className="max-w-[1120px] mx-auto px-5">
         <div className="text-center mb-8">
           <div className="font-bold text-brand-primary/70 text-sm mb-1 whitespace-nowrap">
             Built by an ADHD brain, for ADHD brains.
           </div>
-          <p className="text-xs text-brand-primary/30 mt-1">&copy; {yearDisplay} 925 ADHD LLC</p>
+          <p className="text-xs text-brand-primary/70 mt-1">&copy; {yearDisplay} 925 ADHD LLC</p>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -86,7 +86,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="text-brand-primary/30 hover:text-brand-primary/60 transition-colors"
+                className="text-brand-primary/70 hover:text-brand-primary transition-colors"
               >
                 <social.Icon />
               </a>
@@ -98,13 +98,13 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-brand-primary/35 hover:text-brand-primary/60 transition-colors"
+                className="text-brand-primary/75 hover:text-brand-primary transition-colors"
               >
                 {link.label}
               </Link>
             ))}
-            <span className="text-brand-primary/25">
-              Website by <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary/50 transition-colors">Studio 925</a>
+            <span className="text-brand-primary/70">
+              Website by <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">Studio 925</a>
             </span>
           </nav>
         </div>

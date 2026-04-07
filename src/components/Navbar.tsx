@@ -24,13 +24,13 @@ export default function Navbar() {
             aria-label="925 ADHD Home"
           >
             <img
-              src="/925-adhd-logo.png"
+              src="/925-adhd-logo-64.webp"
               alt="925 ADHD Logo"
-              width={28}
-              height={28}
+              width={32}
+              height={32}
               loading="eager"
               decoding="async"
-              className="rounded-lg object-cover"
+              className="w-7 h-7 md:w-8 md:h-8 rounded-lg object-cover"
             />
             <span className="text-[14px] sm:text-[15px] font-bold whitespace-nowrap">925 ADHD</span>
           </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-brand-primary/50 font-medium text-[14px] px-3 py-2 rounded-lg hover:text-brand-primary hover:bg-black/[.03] transition-all"
+                className="text-brand-primary/75 font-medium text-[14px] px-3 py-2 rounded-lg hover:text-brand-primary hover:bg-black/[.03] transition-all"
               >
                 {link.label}
               </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
             </Link>
             <a
               href="https://app.925adhd.com/"
-              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-primary/60 hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
+              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-primary/75 hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
               aria-label="Login"
             >
               Log in
@@ -94,7 +94,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-brand-primary/60 font-medium text-[15px] px-3 py-2.5 rounded-lg hover:bg-black/[.03] transition-colors"
+                className="text-brand-primary/75 font-medium text-[15px] px-3 py-2.5 rounded-lg hover:bg-black/[.03] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
