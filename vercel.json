@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/blog.html", "destination": "/blog", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/disclaimer.html", "destination": "/disclaimer", "permanent": true },
+    { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/free.html", "destination": "/free/energy-checker", "permanent": true },
+    { "source": "/my-story.html", "destination": "/my-story", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms-of-service.html", "destination": "/terms-of-service", "permanent": true },
+    { "source": "/bonus1.html", "destination": "/", "permanent": false },
+    { "source": "/bonus2.html", "destination": "/", "permanent": false },
+    { "source": "/blog/february/best-adhd-apps-for-adults.html", "destination": "/blog/best-adhd-apps-for-adults", "permanent": true },
+    { "source": "/blog/february/what-is-ring-of-fire-adhd.html", "destination": "/blog/what-is-ring-of-fire-adhd", "permanent": true },
+    { "source": "/blog/february/what-is-the-10-3-rule-for-adhd.html", "destination": "/blog/what-is-the-10-3-rule-for-adhd", "permanent": true },
+    { "source": "/blog/february/why-wfh-advice-fails-adhd.html", "destination": "/blog/why-wfh-advice-fails-adhd", "permanent": true },
+    { "source": "/blog/february/work-from-home-with-adhd.html", "destination": "/blog/work-from-home-with-adhd", "permanent": true },
+    { "source": "/blog/january/cant-work-9-to-5-with-adhd.html", "destination": "/blog/cant-work-9-to-5-with-adhd", "permanent": true }
+  ]
+}
