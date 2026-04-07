@@ -456,10 +456,10 @@ export default function EnergyCheckerPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="rounded-2xl bg-brand-panel border border-brand-border p-8 md:p-10"
           >
-            <h3 className="text-[clamp(22px,3vw,28px)] font-bold text-brand-primary mb-4">
+            <h2 className="text-[clamp(22px,3vw,28px)] font-bold text-brand-primary mb-4">
               Want specifics, not patterns?
-            </h3>
-            <div className="space-y-4 text-[17px] leading-relaxed text-brand-primary/75 mb-8">
+            </h2>
+            <div className="space-y-4 text-[15px] leading-relaxed text-brand-primary/75 mb-8">
               <p>
                 AI can spot patterns, but it can&apos;t verify receipts. This tool gives
                 you a starting point, not certainty.
@@ -473,13 +473,13 @@ export default function EnergyCheckerPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#pricing"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-brand-primary font-bold py-3.5 px-6 hover:bg-[#24a68e] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-teal-dark text-brand-primary font-bold py-3.5 px-6 hover:bg-[#24a68e] transition-colors"
                 >
                   See the Vetted List &mdash; $9.25
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
-                  href="/"
+                  href="/about"
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-border bg-brand-warm text-brand-primary font-bold py-3.5 px-6 hover:bg-brand-panel transition-colors"
                 >
                   Learn more about 925 ADHD
