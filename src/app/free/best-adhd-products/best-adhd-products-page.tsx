@@ -157,7 +157,6 @@ const categories: Category[] = [
         image: '/amazon/time-timer-mod.webp',
         hook: 'Finally, time you can actually SEE.',
         quickHits: ['Visual countdown', 'No math', 'Cures time blindness'],
-        badge: 'Top pick',
       },
       {
         name: 'Amazon Echo Dot',
@@ -167,6 +166,7 @@ const categories: Category[] = [
         image: '/amazon/amazon-echo-dot.webp',
         hook: '"Alexa, set a timer" — done.',
         quickHits: ['No phone needed', 'Voice reminders', 'Great for routines'],
+        badge: 'Top pick',
       },
     ],
   },
@@ -202,7 +202,7 @@ const categories: Category[] = [
       },
       {
         name: "L'AGRATY Weighted Lap Blanket (5 lbs)",
-        price: '$22',
+        price: '$28',
         url: 'https://amzn.to/4mh5IMx',
         isAffiliate: true,
         image: '/amazon/lagraty-weighted-lap-blanket.webp',
@@ -230,6 +230,7 @@ const categories: Category[] = [
         image: '/amazon/govee-led-strip.webp',
         hook: 'Cheapest dopamine upgrade ever.',
         quickHits: ['Color-code your moods', 'App + music sync', 'Ridiculously fun'],
+        badge: 'Top pick',
       },
       {
         name: 'BenQ ScreenBar',
@@ -239,7 +240,6 @@ const categories: Category[] = [
         image: '/amazon/benq-screenbar.webp',
         hook: 'The lamp that knows when your eyes hurt.',
         quickHits: ['Auto-dimming', 'Zero glare', 'Late-night friendly'],
-        badge: 'Top pick',
       },
     ],
   },
@@ -271,9 +271,9 @@ const categories: Category[] = [
 export default function BestAdhdProductsPage() {
   return (
     <article className="bg-gradient-to-b from-stone-50 via-white to-stone-50">
-      <div className="max-w-[1120px] mx-auto px-5 pt-8 md:pt-12 pb-20 md:pb-28">
+      <div className="max-w-[1120px] mx-auto px-5 pt-5 md:pt-7 pb-20 md:pb-28">
         {/* Back link */}
-        <motion.div className="mb-6" {...fadeUp}>
+        <motion.div className="mb-4" {...fadeUp}>
           <Link
             href="/free"
             className="inline-flex items-center gap-2 text-sm font-bold text-brand-primary/70 hover:text-brand-primary hover:gap-3 transition-all"
@@ -284,14 +284,14 @@ export default function BestAdhdProductsPage() {
         </motion.div>
 
         {/* Hero */}
-        <motion.header className="max-w-3xl mb-10" {...fadeUp}>
-          <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-dark bg-teal-100 px-3 py-1.5 rounded-full mb-5">
+        <motion.header className="max-w-3xl mb-6" {...fadeUp}>
+          <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-dark bg-teal-100 px-3 py-1.5 rounded-full mb-3">
             Product Picks
           </span>
-          <h1 className="text-4xl md:text-[52px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-4">
+          <h1 className="text-4xl md:text-[44px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-3">
             Best products for ADHD adults.
           </h1>
-          <p className="text-lg text-brand-muted leading-relaxed max-w-xl">
+          <p className="text-base md:text-lg text-brand-muted leading-relaxed max-w-xl">
             A short list, grouped by category. Everything here is something we
             use or have tested.
           </p>
@@ -299,7 +299,7 @@ export default function BestAdhdProductsPage() {
 
         {/* Category jump chips */}
         <motion.nav
-          className="flex flex-wrap justify-center gap-2 mb-12 md:mb-14"
+          className="flex flex-wrap justify-center gap-2 mb-5"
           {...fadeUp}
           aria-label="Jump to category"
         >
@@ -320,7 +320,7 @@ export default function BestAdhdProductsPage() {
 
         {/* Disclosure */}
         <motion.div
-          className="max-w-2xl mx-auto mb-12 rounded-xl border border-brand-border bg-white/60 px-5 py-3 text-xs text-brand-muted text-center"
+          className="max-w-2xl mx-auto mb-8 rounded-xl border border-brand-border bg-white/60 px-5 py-2.5 text-xs text-brand-muted text-center"
           {...fadeUp}
         >
           <strong className="text-brand-primary/70">Heads up:</strong> some links are
