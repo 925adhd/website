@@ -199,9 +199,7 @@ export default function HomePage() {
                 { theirs: 'No guidance or next steps', ours: 'Step-by-step guides included' },
                 { theirs: 'One-size-fits-all', ours: 'Tagged by energy level' },
                 { theirs: 'Posted once, never updated', ours: 'Updated monthly' },
-                { theirs: 'Written by content farms', ours: 'Built by someone with ADHD' },
-                { theirs: 'Has community forums', ours: 'Community coming soon' },
-              ].map((row, i) => (
+                { theirs: 'Written by content farms', ours: 'Built by someone with ADHD' },              ].map((row, i) => (
                 <React.Fragment key={i}>
                   <div className="flex items-center gap-2.5 py-3.5 border-t border-brand-border text-brand-primary/70">
                     <span className="text-red-300/80 shrink-0 text-xs">{'✗'}</span>
