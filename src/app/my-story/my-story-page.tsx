@@ -263,7 +263,7 @@ export default function MyStoryPage() {
           <p className="text-brand-primary/60 text-[15px] mb-4">Ready to find work that fits your brain?</p>
           <a
             href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-deep text-white font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-[#383838] font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
           >
             Get Instant Access &mdash; $9.25
           </a>

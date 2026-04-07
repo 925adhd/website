@@ -91,7 +91,7 @@ export default function PricingPage() {
             <div className="mt-5">
               <a
                 href={STRIPE_URL}
-                className="flex items-center justify-center w-full px-5 py-4 rounded-[14px] text-lg font-bold bg-brand-teal-deep text-white hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+                className="flex items-center justify-center w-full px-5 py-4 rounded-[14px] text-lg font-bold bg-brand-teal-dark text-[#383838] hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
               >
                 Get Instant Access &mdash; $9.25
               </a>

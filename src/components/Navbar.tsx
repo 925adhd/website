@@ -63,7 +63,7 @@ export default function Navbar() {
             </a>
             <a
               href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-[13px] font-semibold bg-brand-teal-deep text-white hover:bg-[#0d6660] transition-colors"
+              className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-[13px] font-semibold bg-brand-teal-dark text-[#383838] hover:bg-[#24a68e] transition-colors"
             >
               Get Access
             </a>

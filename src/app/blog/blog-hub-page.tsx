@@ -73,7 +73,7 @@ export default function BlogHubPage() {
               onClick={() => setActiveCategory(null)}
               className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
                 activeCategory === null
-                  ? 'bg-brand-teal-deep text-white border-brand-teal-deep'
+                  ? 'bg-brand-teal-dark text-brand-primary border-brand-teal-dark'
                   : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-deep'
               }`}
             >
@@ -85,7 +85,7 @@ export default function BlogHubPage() {
                 onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
                 className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-brand-teal-deep text-white border-brand-teal-deep'
+                    ? 'bg-brand-teal-dark text-brand-primary border-brand-teal-dark'
                     : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-deep'
                 }`}
               >

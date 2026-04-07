@@ -178,7 +178,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={formState === 'submitting'}
-                    className="w-full rounded-xl bg-brand-teal-deep text-white font-bold py-3.5 px-6 hover:bg-[#0b5d57] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full rounded-xl bg-brand-teal-dark text-[#383838] font-bold py-3.5 px-6 hover:bg-[#0b5d57] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {formState === 'submitting' ? 'Sending...' : 'Send Message'}
                   </button>

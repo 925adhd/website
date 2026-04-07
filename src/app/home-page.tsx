@@ -100,7 +100,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto" role="group" aria-label="Primary actions">
               <a
                 href={STRIPE_URL}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-bold bg-brand-teal-deep text-white hover:bg-[#0d6660] hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(43,186,161,0.35)]"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-bold bg-brand-teal-dark text-[#383838] hover:bg-[#24a68e] hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(43,186,161,0.35)]"
               >
                 Get Instant Access &mdash; $9.25
               </a>
@@ -309,7 +309,7 @@ export default function HomePage() {
 
               <a
                 href={STRIPE_URL}
-                className="flex items-center justify-center w-full py-4 rounded-2xl text-[16px] font-bold bg-brand-teal-deep text-white hover:bg-[#0d6660] transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+                className="flex items-center justify-center w-full py-4 rounded-2xl text-[16px] font-bold bg-brand-teal-dark text-[#383838] hover:bg-[#24a68e] transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
               >
                 Get Instant Access
               </a>
@@ -487,7 +487,7 @@ function StickyMobileCTA() {
         </div>
         <a
           href={STRIPE_URL}
-          className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-bold bg-brand-teal-deep text-white"
+          className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-bold bg-brand-teal-dark text-[#383838]"
         >
           Get Access
         </a>

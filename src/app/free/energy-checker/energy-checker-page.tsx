@@ -294,7 +294,7 @@ export default function EnergyCheckerPage() {
             <button
               onClick={handleAnalyze}
               disabled={loading}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-deep text-white font-bold px-6 py-3.5 text-[15px] hover:bg-[#0d6660] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-brand-primary font-bold px-6 py-3.5 text-[15px] hover:bg-[#24a68e] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>
@@ -453,7 +453,7 @@ export default function EnergyCheckerPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#pricing"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-deep text-white font-bold py-3.5 px-6 hover:bg-[#0d6660] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-brand-primary font-bold py-3.5 px-6 hover:bg-[#24a68e] transition-colors"
                 >
                   See the Vetted List &mdash; $9.25
                   <ArrowRight className="w-4 h-4" />

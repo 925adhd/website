@@ -227,7 +227,7 @@ export default function SideHustlesPage() {
               <button
                 type="submit"
                 disabled={sending}
-                className="rounded-xl bg-brand-teal-deep text-white font-bold px-5 py-3 text-sm hover:bg-[#0b5d57] transition-colors shrink-0 inline-flex items-center gap-2 disabled:opacity-60"
+                className="rounded-xl bg-brand-teal-dark text-brand-primary font-bold px-5 py-3 text-sm hover:bg-[#0b5d57] transition-colors shrink-0 inline-flex items-center gap-2 disabled:opacity-60"
               >
                 {sending ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
                 Get Free Guide
@@ -371,7 +371,7 @@ export default function SideHustlesPage() {
             </p>
             <Link
               href="/#pricing"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-deep text-white font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#0b5d57] hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-brand-primary font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#0b5d57] hover:-translate-y-0.5 transition-all"
             >
               Get Instant Access &mdash; $9.25
               <ArrowRight className="w-4 h-4" />
