@@ -424,8 +424,8 @@ function GuideEmailCapture() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: 'dfb5a758-6041-45a0-b76d-6ee784a406ec',
-          subject: 'Free guide download - 925 ADHD',
-          from_name: 'Free Guide Signup',
+          subject: 'Home page signup - 925 ADHD',
+          from_name: 'Home Page Signup',
           email,
         }),
       });
