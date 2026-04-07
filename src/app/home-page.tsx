@@ -315,7 +315,7 @@ export default function HomePage() {
                 <p className="text-[13px] font-bold text-brand-primary/60 mb-3">After you join:</p>
                 <ol className="space-y-2 text-[13px] text-brand-primary/55 list-none m-0 p-0">
                   {[
-                    <>Open the dashboard at <a href="https://app.925adhd.com/" target="_blank" rel="noopener noreferrer" className="text-brand-teal-dark font-semibold hover:underline">app.925adhd.com</a></>,
+                    <>Open <a href="https://app.925adhd.com/" target="_blank" rel="noopener noreferrer" className="text-brand-teal-dark font-semibold hover:underline">app.925adhd.com</a></>,
                     'Browse 70+ options or take the Passion Finder Quiz',
                     'Pick one that fits your energy today',
                     'Follow the step-by-step guide and start earning',
