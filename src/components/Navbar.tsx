@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="flex items-center gap-0.5 sm:gap-2 shrink-0">
             <Link
               href="/free"
-              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-dark hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
+              className="inline-flex items-center px-2 sm:px-3.5 py-2 rounded-lg text-[12px] sm:text-[13px] font-semibold text-brand-teal-deep hover:text-brand-primary hover:bg-black/[.03] transition-all whitespace-nowrap"
             >
               Free Resources
             </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
             </a>
             <a
               href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-[13px] font-semibold bg-brand-teal-dark text-white hover:bg-[#24a68e] transition-colors"
+              className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-[13px] font-semibold bg-brand-teal-deep text-white hover:bg-[#0d6660] transition-colors"
             >
               Get Access
             </a>
@@ -102,7 +102,7 @@ export default function Navbar() {
             ))}
             <a
               href="https://app.925adhd.com/"
-              className="text-brand-teal-dark font-medium text-[15px] px-3 py-2.5"
+              className="text-brand-teal-deep font-medium text-[15px] px-3 py-2.5"
             >
               Log in
             </a>

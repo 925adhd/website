@@ -29,7 +29,7 @@ export default function AboutPage() {
           >
             A curated hub that helps ADHD brains find flexible online work, focus-friendly
             tools, and a community that <em>actually</em> gets it.{' '}
-            <Link href="/#pricing" className="text-brand-teal-dark font-bold underline">
+            <Link href="/#pricing" className="text-brand-teal-deep font-bold underline">
               See what&apos;s included →
             </Link>
           </motion.p>
@@ -54,16 +54,16 @@ export default function AboutPage() {
                 {'👋 '}Meet Kara
               </h2>
               <p className="text-[17px] leading-relaxed text-brand-primary/75 mb-4">
-                <strong className="text-brand-teal-dark">Founder. Mom. Tech nerd. Gamer. Dopamine chaser.</strong>
+                <strong className="text-brand-teal-deep">Founder. Mom. Tech nerd. Gamer. Dopamine chaser.</strong>
               </p>
               <p className="text-[17px] leading-relaxed text-brand-primary/75 mb-4">
                 I tried the 9–5 grind. Factories, deadlines, alarms, chronic lateness. Got fired (again) for showing up late.
               </p>
               <p className="text-[17px] leading-relaxed text-brand-primary/75 mb-4">
-                The truth? <strong className="text-brand-teal-dark">I wasn&apos;t lazy. I was trapped in a system that punished the way my brain works.</strong>
+                The truth? <strong className="text-brand-teal-deep">I wasn&apos;t lazy. I was trapped in a system that punished the way my brain works.</strong>
               </p>
               <p className="text-[17px] leading-relaxed text-brand-primary/75 mb-4">
-                Then I found remote work and freelancing. It saved my mental health, my energy, and my relationship with my brain. And it gave me something priceless: <strong className="text-brand-teal-dark">time with my son.</strong>
+                Then I found remote work and freelancing. It saved my mental health, my energy, and my relationship with my brain. And it gave me something priceless: <strong className="text-brand-teal-deep">time with my son.</strong>
               </p>
               <p className="text-[17px] leading-relaxed text-brand-primary/75">
                 That&apos;s why I built 925 ADHD.
@@ -142,7 +142,7 @@ export default function AboutPage() {
           </p>
           <a
             href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-white font-bold text-base hover:bg-[#24a68e] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-deep text-white font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
           >
             Get Instant Access &mdash; $9.25
           </a>

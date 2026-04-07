@@ -19,6 +19,7 @@
   --color-price-green: #0f7a68;
   --color-brand-teal: #9be2d4;
   --color-brand-teal-dark: #2bbaa1;
+  --color-brand-teal-deep: #117f74;
 }
 
 @layer base {

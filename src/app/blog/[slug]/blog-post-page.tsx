@@ -29,7 +29,7 @@ export default function BlogPostPage({ slug }: { slug: string }) {
         <motion.div className="mb-8" {...fadeUp}>
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm font-bold text-brand-teal-dark hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-sm font-bold text-brand-teal-deep hover:gap-3 transition-all"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
@@ -115,7 +115,7 @@ export default function BlogPostPage({ slug }: { slug: string }) {
           </p>
           <Link
             href="/#pricing"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-white font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#24a68e] hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-deep text-white font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#0b5d57] hover:-translate-y-0.5 transition-all"
           >
             Get Instant Access &mdash; $9.25
             <ArrowRight className="w-4 h-4" />
@@ -134,7 +134,7 @@ export default function BlogPostPage({ slug }: { slug: string }) {
           className="max-w-[780px] mx-auto mt-8 rounded-2xl border border-brand-teal-dark/15 bg-brand-teal-dark/[.03] p-8 text-center"
           {...fadeUp}
         >
-          <Mail className="w-6 h-6 text-brand-teal-dark mx-auto mb-2" />
+          <Mail className="w-6 h-6 text-brand-teal-deep mx-auto mb-2" />
           <p className="font-bold text-brand-primary mb-1">Not ready yet? Get free tips instead.</p>
           <p className="text-sm text-brand-primary/60 mb-4">3 ADHD-friendly side hustle ideas + brain-friendly work tips. No spam.</p>
           <BlogEmailCapture />
@@ -166,7 +166,7 @@ export default function BlogPostPage({ slug }: { slug: string }) {
                     <span className="text-xs font-bold text-brand-green bg-green-50 border border-green-200/40 px-3 py-1 rounded-full">
                       {rp.category}
                     </span>
-                    <h3 className="mt-3 text-[16px] font-extrabold text-brand-primary leading-snug group-hover:text-brand-teal-dark transition-colors">
+                    <h3 className="mt-3 text-[16px] font-extrabold text-brand-primary leading-snug group-hover:text-brand-teal-deep transition-colors">
                       {rp.title}
                     </h3>
                     <p className="mt-2 text-sm text-brand-muted line-clamp-2">
@@ -235,7 +235,7 @@ function BlogEmailCapture() {
       />
       <button
         type="submit"
-        className="rounded-xl bg-brand-teal-dark text-white font-bold px-5 py-3 text-sm hover:bg-[#24a68e] transition-colors shrink-0"
+        className="rounded-xl bg-brand-teal-deep text-white font-bold px-5 py-3 text-sm hover:bg-[#0b5d57] transition-colors shrink-0"
       >
         Send Me Ideas
       </button>

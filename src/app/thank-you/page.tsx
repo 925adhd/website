@@ -22,7 +22,7 @@ export default function ThankYouPage() {
         </p>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 bg-brand-teal-dark text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#24a68e] transition-colors"
+          className="inline-flex items-center gap-2 bg-brand-teal-deep text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0b5d57] transition-colors"
         >
           &larr; Back to Home
         </Link>

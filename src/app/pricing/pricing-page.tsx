@@ -58,10 +58,10 @@ export default function PricingPage() {
               <div className="my-3">
                 <span className="text-[48px] font-black tracking-tight text-brand-primary">$9.25</span>
                 <div className="text-xs font-extrabold text-brand-primary/75">
-                  one-time &bull; yours forever &bull; <span className="text-brand-teal-dark font-extrabold">ad-free</span>
+                  one-time &bull; yours forever &bull; <span className="text-brand-teal-deep font-extrabold">ad-free</span>
                 </div>
               </div>
-              <p className="text-sm font-bold text-brand-teal-dark">Every option manually vetted. Zero scams.</p>
+              <p className="text-sm font-bold text-brand-teal-deep">Every option manually vetted. Zero scams.</p>
             </div>
 
             <div className="mt-6 space-y-2.5">
@@ -91,7 +91,7 @@ export default function PricingPage() {
             <div className="mt-5">
               <a
                 href={STRIPE_URL}
-                className="flex items-center justify-center w-full px-5 py-4 rounded-[14px] text-lg font-bold bg-brand-teal-dark text-white hover:bg-[#24a68e] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+                className="flex items-center justify-center w-full px-5 py-4 rounded-[14px] text-lg font-bold bg-brand-teal-deep text-white hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
               >
                 Get Instant Access &mdash; $9.25
               </a>
@@ -134,7 +134,7 @@ export default function PricingPage() {
         <div className="max-w-[560px] mx-auto px-5 text-center">
           <p className="text-brand-primary/65 text-sm">
             Have questions?{' '}
-            <Link href="/faq" className="text-brand-teal-dark font-bold underline">
+            <Link href="/faq" className="text-brand-teal-deep font-bold underline">
               Read the full FAQ →
             </Link>
           </p>

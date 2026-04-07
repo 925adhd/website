@@ -73,8 +73,8 @@ export default function BlogHubPage() {
               onClick={() => setActiveCategory(null)}
               className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
                 activeCategory === null
-                  ? 'bg-brand-teal-dark text-white border-brand-teal-dark'
-                  : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-dark'
+                  ? 'bg-brand-teal-deep text-white border-brand-teal-deep'
+                  : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-deep'
               }`}
             >
               All
@@ -85,8 +85,8 @@ export default function BlogHubPage() {
                 onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
                 className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-brand-teal-dark text-white border-brand-teal-dark'
-                    : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-dark'
+                    ? 'bg-brand-teal-deep text-white border-brand-teal-deep'
+                    : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-deep'
                 }`}
               >
                 {cat}
@@ -135,13 +135,13 @@ export default function BlogHubPage() {
                         {formatDate(post.publishedDate)}
                       </span>
                     </div>
-                    <h2 className="text-[17px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors">
+                    <h2 className="text-[17px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-deep transition-colors">
                       {post.title}
                     </h2>
                     <p className="text-sm text-brand-muted leading-relaxed line-clamp-2 mb-4">
                       {post.description}
                     </p>
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-dark group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-deep group-hover:gap-2 transition-all">
                       Read more <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>

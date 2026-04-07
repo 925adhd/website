@@ -263,7 +263,7 @@ export default function MyStoryPage() {
           <p className="text-brand-primary/60 text-[15px] mb-4">Ready to find work that fits your brain?</p>
           <a
             href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-white font-bold text-base hover:bg-[#24a68e] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-deep text-white font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
           >
             Get Instant Access &mdash; $9.25
           </a>
@@ -518,7 +518,7 @@ export default function MyStoryPage() {
           <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.15 }} className="mt-10">
             <a
               href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-              className="inline-block bg-brand-teal-dark hover:bg-[#24a68e] text-white font-bold text-[18px] px-10 py-4 rounded-full transition-colors"
+              className="inline-block bg-brand-teal-deep hover:bg-[#0b5d57] text-white font-bold text-[18px] px-10 py-4 rounded-full transition-colors"
             >
               Get Instant Access &mdash; $9.25
             </a>

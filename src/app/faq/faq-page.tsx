@@ -117,7 +117,7 @@ export default function FaqPage({ items }: { items: FaqItem[] }) {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-                className="inline-block bg-brand-teal-dark hover:bg-[#24a68e] text-white font-bold text-[17px] px-8 py-4 rounded-full transition-colors"
+                className="inline-block bg-brand-teal-deep hover:bg-[#0d6660] text-white font-bold text-[17px] px-8 py-4 rounded-full transition-colors"
               >
                 Get Instant Access &mdash; $9.25
               </a>

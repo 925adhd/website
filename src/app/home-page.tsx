@@ -8,7 +8,7 @@ import { CheckCircle, Star, ChevronDown, Gift } from 'lucide-react';
 const STRIPE_URL = 'https://buy.stripe.com/28E3cw1B33logABev67Zu02';
 
 const fadeUp = {
-  initial: { opacity: 0, y: 20 },
+  initial: false as const,
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6 },
@@ -91,7 +91,7 @@ export default function HomePage() {
           <motion.p
             {...fadeUp}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="max-w-[720px] mx-auto mt-4 text-[14px] md:text-[17px] text-brand-primary/55 leading-relaxed px-2 md:px-0"
+            className="max-w-[720px] mx-auto mt-4 text-[14px] md:text-[17px] text-brand-primary/75 leading-relaxed px-2 md:px-0"
           >
             70+ ADHD-friendly ways to earn online — tagged by energy, effort, and payout speed.
           </motion.p>
@@ -100,18 +100,18 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto" role="group" aria-label="Primary actions">
               <a
                 href={STRIPE_URL}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-bold bg-brand-teal-dark text-white hover:bg-[#24a68e] hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(43,186,161,0.35)]"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-bold bg-brand-teal-deep text-white hover:bg-[#0d6660] hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(43,186,161,0.35)]"
               >
                 Get Instant Access &mdash; $9.25
               </a>
               <a
                 href="#what-you-get"
-                className="inline-flex items-center px-5 py-3 rounded-full text-[14px] md:text-[15px] font-semibold text-brand-primary/70 hover:text-brand-teal-dark hover:bg-brand-teal/10 transition-all"
+                className="inline-flex items-center px-5 py-3 rounded-full text-[14px] md:text-[15px] font-semibold text-brand-primary/70 hover:text-brand-teal-deep hover:bg-brand-teal/10 transition-all"
               >
                 See features
               </a>
             </div>
-            <p className="text-xs text-brand-primary/40 font-medium">
+            <p className="text-xs text-brand-primary/70 font-medium">
               One-time payment &middot; Lifetime access &middot; 30-day guarantee
             </p>
           </motion.div>
@@ -174,7 +174,7 @@ export default function HomePage() {
                   <img src={feat.icon} alt={feat.title} width={56} height={56} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-[15px] font-bold m-0">{feat.title}</h3>
-                <p className="text-sm text-brand-primary/50 mt-1.5 leading-relaxed">{feat.desc}</p>
+                <p className="text-sm text-brand-primary/75 mt-1.5 leading-relaxed">{feat.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
       <section className="py-10 md:py-16" aria-label="Why 925 ADHD is different">
         <div className="max-w-[680px] mx-auto px-5">
           <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-teal-dark mb-3">The difference</p>
+            <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-teal-deep mb-3">The difference</p>
             <h2 className="text-[22px] md:text-[clamp(26px,3.5vw,38px)] tracking-[-0.02em] font-black">Why This Isn&apos;t Just Another List</h2>
           </motion.div>
 
@@ -222,7 +222,7 @@ export default function HomePage() {
       <section className="py-10 md:py-16 bg-white" aria-label="Testimonials">
         <div className="max-w-[960px] mx-auto px-5">
           <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-teal-dark mb-3">Testimonials</p>
+            <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-teal-deep mb-3">Testimonials</p>
             <h2 className="text-[22px] md:text-[clamp(26px,3.5vw,38px)] tracking-[-0.02em] font-black">What Members Are Saying</h2>
           </motion.div>
           <div className="flex sm:grid sm:grid-cols-3 gap-4 sm:gap-8 -mx-5 px-5 sm:mx-0 sm:px-0 overflow-x-auto sm:overflow-visible snap-x snap-proximity sm:snap-none scroll-pl-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -273,7 +273,7 @@ export default function HomePage() {
           <motion.div {...fadeUp} className="text-center mb-8">
             <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-3">Pricing</p>
             <h2 className="text-[22px] md:text-[clamp(26px,3.5vw,38px)] tracking-[-0.02em] font-black">One Price. Lifetime Access.</h2>
-            <p className="text-brand-primary/45 text-[15px] mt-2">Pay once, get everything. No recurring fees.</p>
+            <p className="text-brand-primary/75 text-[15px] mt-2">Pay once, get everything. No recurring fees.</p>
           </motion.div>
 
           <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="max-w-[480px] mx-auto">
@@ -282,8 +282,8 @@ export default function HomePage() {
                 <div className="mb-2">
                   <span className="text-[40px] md:text-[52px] font-black tracking-[-0.04em] text-brand-primary">$9.25</span>
                 </div>
-                <p className="text-sm text-brand-primary/40 font-medium">one-time &middot; lifetime access &middot; ad-free</p>
-                <p className="text-sm font-bold text-brand-teal-dark mt-2">Every option manually vetted. Zero scams.</p>
+                <p className="text-sm text-brand-primary/75 font-medium">one-time &middot; lifetime access &middot; ad-free</p>
+                <p className="text-sm font-bold text-brand-teal-deep mt-2">Every option manually vetted. Zero scams.</p>
               </div>
 
               <div className="space-y-3 mb-8">
@@ -303,28 +303,28 @@ export default function HomePage() {
               <div className="flex items-center gap-2.5 p-3 mb-6 rounded-xl bg-brand-teal-dark/[.06] border border-brand-teal-dark/[.12]">
                 <span className="text-lg shrink-0">{'🛡️'}</span>
                 <p className="text-[13px] font-semibold text-brand-primary/70 leading-snug m-0">
-                  <strong className="text-brand-teal-dark">30-day money-back guarantee.</strong>{' '}Full refund if it&apos;s not for you. No questions asked.
+                  <strong className="text-brand-teal-deep">30-day money-back guarantee.</strong>{' '}Full refund if it&apos;s not for you. No questions asked.
                 </p>
               </div>
 
               <a
                 href={STRIPE_URL}
-                className="flex items-center justify-center w-full py-4 rounded-2xl text-[16px] font-bold bg-brand-teal-dark text-white hover:bg-[#24a68e] transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+                className="flex items-center justify-center w-full py-4 rounded-2xl text-[16px] font-bold bg-brand-teal-deep text-white hover:bg-[#0d6660] transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
               >
                 Get Instant Access
               </a>
 
               <div className="mt-6 pt-6 border-t border-black/[.06]">
                 <p className="text-[13px] font-bold text-brand-primary/60 mb-3">After you join:</p>
-                <ol className="space-y-2 text-[13px] text-brand-primary/55 list-none m-0 p-0">
+                <ol className="space-y-2 text-[13px] text-brand-primary/75 list-none m-0 p-0">
                   {[
-                    <>Open <a href="https://app.925adhd.com/" target="_blank" rel="noopener noreferrer" className="text-brand-teal-dark font-semibold hover:underline">app.925adhd.com</a></>,
+                    <>Open <a href="https://app.925adhd.com/" target="_blank" rel="noopener noreferrer" className="text-brand-teal-deep font-semibold hover:underline">app.925adhd.com</a></>,
                     'Browse 70+ options or take the Passion Finder Quiz',
                     'Pick one that fits your energy today',
                     'Follow the step-by-step guide and start earning',
                   ].map((step, i) => (
                     <li key={i} className="flex items-start gap-2.5">
-                      <span className="text-brand-teal-dark font-bold shrink-0">{i + 1}.</span>
+                      <span className="text-brand-teal-deep font-bold shrink-0">{i + 1}.</span>
                       {step}
                     </li>
                   ))}
@@ -358,7 +358,7 @@ export default function HomePage() {
           <motion.div {...fadeUp} className="max-w-[480px] mx-auto text-center">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-4">Free Guide</p>
             <h2 className="text-xl font-black tracking-tight mb-2">Not ready to buy yet?</h2>
-            <p className="text-sm text-brand-primary/45 mb-6 leading-relaxed">
+            <p className="text-sm text-brand-primary/75 mb-6 leading-relaxed">
               Get our 5 ADHD-Friendly Side Hustles guide &mdash; free, instant access. No spam.
             </p>
             <GuideEmailCapture />
@@ -407,7 +407,7 @@ function FaqAccordion({ question, answer }: { question: string; answer: string }
           className="text-brand-primary/40 shrink-0 ml-4 transition-transform duration-200 group-open:rotate-180"
         />
       </summary>
-      <p className="text-sm text-brand-primary/55 leading-relaxed m-0 pb-5">{answer}</p>
+      <p className="text-sm text-brand-primary/75 leading-relaxed m-0 pb-5">{answer}</p>
     </details>
   );
 }
@@ -483,11 +483,11 @@ function StickyMobileCTA() {
       <div className="bg-white/95 backdrop-blur-md border-t border-brand-border px-4 py-3 flex items-center justify-between gap-3">
         <div className="text-sm">
           <span className="font-black text-brand-primary">$9.25</span>
-          <span className="text-brand-primary/40 text-xs ml-1">one-time</span>
+          <span className="text-brand-primary/70 text-xs ml-1">one-time</span>
         </div>
         <a
           href={STRIPE_URL}
-          className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-bold bg-brand-teal-dark text-white"
+          className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-bold bg-brand-teal-deep text-white"
         >
           Get Access
         </a>

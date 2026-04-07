@@ -285,7 +285,7 @@ export default function BestAdhdProductsPage() {
 
         {/* Hero */}
         <motion.header className="max-w-3xl mb-6" {...fadeUp}>
-          <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-dark bg-teal-100 px-3 py-1.5 rounded-full mb-3">
+          <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-deep bg-teal-100 px-3 py-1.5 rounded-full mb-3">
             Product Picks
           </span>
           <h1 className="text-4xl md:text-[44px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-3">
@@ -415,7 +415,7 @@ export default function BestAdhdProductsPage() {
 
                       {/* CTA button */}
                       <span
-                        className="inline-flex items-center justify-center gap-1.5 w-full text-sm font-extrabold text-brand-teal-dark bg-white border-2 border-brand-teal-dark/30 hover:border-brand-teal-dark hover:bg-brand-teal-dark/[.04] px-4 py-2.5 rounded-xl transition-colors group-hover:gap-2.5"
+                        className="inline-flex items-center justify-center gap-1.5 w-full text-sm font-extrabold text-brand-teal-deep bg-white border-2 border-brand-teal-dark/30 hover:border-brand-teal-deep hover:bg-brand-teal-dark/[.04] px-4 py-2.5 rounded-xl transition-colors group-hover:gap-2.5"
                       >
                         Check it out
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />

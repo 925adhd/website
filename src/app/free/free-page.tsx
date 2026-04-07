@@ -155,7 +155,7 @@ export default function FreeHubPage() {
       <div className="max-w-[1120px] mx-auto px-5">
         {/* Header — left-aligned, editorial */}
         <motion.div className="max-w-2xl mb-8 md:mb-12" {...fadeUp}>
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-teal-dark mb-3">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-teal-deep mb-3">
             <span className="h-px w-8 bg-brand-teal-dark/40" />
             Free &amp; Open
           </div>
@@ -264,13 +264,13 @@ export default function FreeHubPage() {
                       {r.category}
                     </span>
                   </div>
-                  <h2 className="text-[18px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors">
+                  <h2 className="text-[18px] font-extrabold text-brand-primary leading-snug mb-2 group-hover:text-brand-teal-deep transition-colors">
                     {r.title}
                   </h2>
                   <p className="text-sm text-brand-muted leading-relaxed mb-5 flex-1">
                     {r.description}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-dark group-hover:gap-2 transition-all">
+                  <span className="inline-flex items-center gap-1 text-sm font-bold text-brand-teal-deep group-hover:gap-2 transition-all">
                     {r.cta} <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
