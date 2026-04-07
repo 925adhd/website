@@ -104,7 +104,15 @@ export default function Footer() {
               </Link>
             ))}
             <span className="text-brand-primary/70">
-              Website by <a href="https://studio925.design" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">Studio 925</a>
+              Website by{' '}
+              <a
+                href="https://studio925.design"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-brand-teal-deep hover:text-brand-accent underline underline-offset-4 decoration-brand-teal-deep/50 hover:decoration-brand-accent transition-colors"
+              >
+                Studio 925
+              </a>
             </span>
           </nav>
         </div>

@@ -108,8 +108,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission */}
-      <section className="pt-14 pb-8">
+      {/* Mission + CTA */}
+      <section className="pt-14 pb-14">
         <div className="max-w-[600px] mx-auto px-5 text-center">
           <motion.h2 {...fadeUp} className="text-[clamp(24px,3.5vw,36px)] font-black mb-3">
             Our Mission
@@ -130,25 +130,17 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-        </div>
-      </section>
-
-      {/* Get Access CTA */}
-      <section className="py-12 pb-14 text-center bg-brand-panel">
-        <div className="max-w-[680px] mx-auto px-5">
-          <h2 className="text-2xl font-black mb-2">Ready to find work that fits your brain?</h2>
-          <p className="text-brand-primary/65 text-[15px] mb-5">
-            A curated library of ADHD-friendly income streams. One-time payment. Lifetime access.
-          </p>
-          <a
-            href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-[#383838] font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
-          >
-            Get Instant Access &mdash; $9.25
-          </a>
-          <p className="flex items-center justify-center gap-1.5 text-xs font-bold text-[#92400e] mt-4">
-            {'🛡️'} 30-Day Money-Back Guarantee
-          </p>
+          <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.2 }} className="mt-10">
+            <a
+              href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-[#383838] font-bold text-base hover:bg-[#0b5d57] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
+            >
+              Get Instant Access &mdash; $9.25
+            </a>
+            <p className="flex items-center justify-center gap-1.5 text-xs font-bold text-[#92400e] mt-4">
+              {'🛡️'} 30-Day Money-Back Guarantee
+            </p>
+          </motion.div>
         </div>
       </section>
     </>

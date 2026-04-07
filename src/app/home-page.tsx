@@ -355,11 +355,17 @@ export default function HomePage() {
         <div className="max-w-[1120px] mx-auto px-5">
           <motion.div {...fadeUp} className="max-w-[480px] mx-auto text-center">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-4">Free Guide</p>
-            <h2 className="text-xl font-black tracking-tight mb-2">Not ready to buy yet?</h2>
+            <h2 className="text-xl font-black tracking-tight mb-2">See 5 examples of what&apos;s inside.</h2>
             <p className="text-sm text-brand-primary/75 mb-6 leading-relaxed">
-              Get our 5 ADHD-Friendly Side Hustles guide &mdash; free, instant access. No spam.
+              Get 5 ADHD-friendly side hustles from the full list &mdash; free, instant access. No spam.
             </p>
             <GuideEmailCapture />
+            <p className="text-xs text-brand-primary/60 mt-5">
+              Or browse more{' '}
+              <a href="/free" className="font-semibold text-brand-teal-deep hover:underline">free resources</a>
+              {' '}and the{' '}
+              <a href="/blog" className="font-semibold text-brand-teal-deep hover:underline">blog</a>.
+            </p>
           </motion.div>
         </div>
       </section>

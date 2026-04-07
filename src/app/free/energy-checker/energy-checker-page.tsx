@@ -236,10 +236,13 @@ export default function EnergyCheckerPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-[1120px] mx-auto px-5">
-          <motion.div className="mb-8" {...fadeUp}>
+      {/* Hero + Input */}
+      <section className="relative py-10 md:py-14 overflow-hidden">
+        <div className="absolute top-0 left-[5%] w-[520px] h-[520px] bg-brand-accent/[.05] rounded-full blur-[120px] pointer-events-none hidden md:block" />
+        <div className="absolute top-[20%] right-[2%] w-[440px] h-[440px] bg-brand-teal/[.10] rounded-full blur-[110px] pointer-events-none hidden md:block" />
+
+        <div className="relative max-w-[1120px] mx-auto px-5">
+          <motion.div className="mb-6 md:mb-8" {...fadeUp}>
             <Link
               href="/free"
               className="inline-flex items-center gap-2 text-sm font-bold text-brand-teal-deep hover:gap-3 transition-all"
@@ -249,70 +252,87 @@ export default function EnergyCheckerPage() {
             </Link>
           </motion.div>
 
-          <motion.div className="max-w-[780px] mx-auto text-center" {...fadeUp}>
-            <span className="inline-block text-xs font-extrabold text-brand-green bg-green-50 border border-green-200/40 px-4 py-1.5 rounded-full mb-4">
-              Free Tool
-            </span>
-            <h1 className="text-3xl md:text-[44px] font-extrabold tracking-tight text-brand-primary leading-[1.15] mb-4">
-              Is This Worth My Energy?
-            </h1>
-            <p className="text-brand-muted max-w-[520px] mx-auto leading-relaxed">
-              Paste any job, side hustle, or platform. Get a quick breakdown of what to watch out for.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            {/* Left: copy */}
+            <motion.div className="text-center md:text-left" {...fadeUp}>
+              <span className="inline-flex items-center gap-2 text-xs font-extrabold text-brand-green-text bg-green-50 border border-green-200/50 px-4 py-1.5 rounded-full mb-4">
+                <Zap className="w-3.5 h-3.5 text-brand-green" fill="currentColor" />
+                Free AI Tool &middot; No signup
+              </span>
+              <h1 className="text-3xl md:text-[44px] font-extrabold tracking-tight text-brand-primary leading-[1.1] mb-4">
+                Is This{' '}
+                <span className="bg-gradient-to-r from-brand-accent to-[#a855f7] bg-clip-text text-transparent">
+                  Worth My Energy?
+                </span>
+              </h1>
+              <p className="text-brand-muted leading-relaxed mb-5 md:max-w-[440px]">
+                Paste any job, side hustle, or platform. Get a quick breakdown of what to watch out for.
+              </p>
 
-      {/* Input Section */}
-      <section className="pb-8">
-        <div className="max-w-[720px] mx-auto px-5">
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="rounded-2xl border border-brand-border bg-white p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.06)]"
-          >
-            <p className="text-sm font-bold text-brand-primary/70 mb-3 flex items-center gap-2">
-              <span className="text-lg">&#128203;</span>
-              Paste anything you&apos;re considering doing for money online
-            </p>
-
-            <textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder="Example: 'Swagbucks surveys' or paste an entire job listing here..."
-              rows={5}
-              className="w-full rounded-xl border border-brand-border bg-brand-warm px-4 py-3 text-[15px] text-brand-primary placeholder:text-brand-muted/50 outline-none focus:ring-2 focus:ring-brand-accent/30 transition-shadow resize-y mb-4"
-            />
-
-            {error && (
-              <div className="rounded-xl bg-red-50 border border-red-200/50 text-red-700 text-sm font-semibold px-4 py-3 mb-4">
-                {error}
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                <span className="text-xs font-semibold text-brand-primary/50 mr-1">Try:</span>
+                {['Swagbucks', 'UserTesting', 'Fiverr gigs', 'Amazon MTurk'].map((ex) => (
+                  <button
+                    key={ex}
+                    type="button"
+                    onClick={() => setInput(ex)}
+                    className="text-xs font-semibold text-brand-primary/70 bg-white border border-brand-border rounded-full px-3 py-1.5 hover:border-brand-teal hover:text-brand-teal-deep hover:-translate-y-0.5 transition-all shadow-[0_1px_3px_rgba(0,0,0,0.04)]"
+                  >
+                    {ex}
+                  </button>
+                ))}
               </div>
-            )}
+            </motion.div>
 
-            <button
-              onClick={handleAnalyze}
-              disabled={loading}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-brand-primary font-bold px-6 py-3.5 text-[15px] hover:bg-[#24a68e] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+            {/* Right: input card */}
+            <motion.div
+              {...fadeUp}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="rounded-2xl border border-brand-border bg-white p-6 md:p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)]"
             >
-              {loading ? (
-                <>
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                  Analyzing...
-                </>
-              ) : (
-                <>
-                  <Search className="w-4 h-4" />
-                  Analyze This
-                </>
-              )}
-            </button>
+              <p className="text-sm font-bold text-brand-primary/70 mb-3 flex items-center gap-2">
+                <span className="text-lg">&#128203;</span>
+                Paste anything you&apos;re considering doing for money online
+              </p>
 
-            <p className="text-xs text-brand-primary/40 mt-3">
-              Press Ctrl+Enter to submit. Powered by AI — use as a starting point, not a final answer.
-            </p>
-          </motion.div>
+              <textarea
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Example: 'Swagbucks surveys' or paste an entire job listing here..."
+                rows={5}
+                className="w-full rounded-xl border border-brand-border bg-brand-warm px-4 py-3 text-[15px] text-brand-primary placeholder:text-brand-muted/50 outline-none focus:ring-2 focus:ring-brand-accent/30 transition-shadow resize-y mb-4"
+              />
+
+              {error && (
+                <div className="rounded-xl bg-red-50 border border-red-200/50 text-red-700 text-sm font-semibold px-4 py-3 mb-4">
+                  {error}
+                </div>
+              )}
+
+              <button
+                onClick={handleAnalyze}
+                disabled={loading}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-brand-teal-dark text-brand-primary font-bold px-6 py-3.5 text-[15px] hover:bg-[#24a68e] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Analyzing...
+                  </>
+                ) : (
+                  <>
+                    <Search className="w-4 h-4" />
+                    Analyze This
+                  </>
+                )}
+              </button>
+
+              <p className="text-xs text-brand-primary/40 mt-3">
+                Press Ctrl+Enter to submit. Powered by AI — use as a starting point, not a final answer.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
