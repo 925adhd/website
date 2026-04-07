@@ -299,23 +299,25 @@ export default function BestAdhdProductsPage() {
 
         {/* Category jump chips */}
         <motion.nav
-          className="flex flex-wrap justify-center gap-2 mb-5"
+          className="-mx-5 px-5 mb-5 overflow-x-auto md:mx-0 md:px-0 md:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           {...fadeUp}
           aria-label="Jump to category"
         >
-          {categories.map((c) => {
-            const Icon = c.icon;
-            return (
-              <a
-                key={c.id}
-                href={`#${c.id}`}
-                className="inline-flex items-center gap-1.5 text-xs font-bold px-3.5 py-2 rounded-full bg-white border border-brand-border text-brand-primary/80 hover:border-brand-primary/30 hover:text-brand-primary hover:-translate-y-0.5 hover:shadow-sm transition-all"
-              >
-                <Icon className="w-3.5 h-3.5" />
-                {c.title}
-              </a>
-            );
-          })}
+          <div className="flex md:flex-wrap md:justify-center gap-2 w-max md:w-auto">
+            {categories.map((c) => {
+              const Icon = c.icon;
+              return (
+                <a
+                  key={c.id}
+                  href={`#${c.id}`}
+                  className="inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-white border border-brand-border text-brand-primary/80 hover:border-brand-primary/30 hover:text-brand-primary hover:-translate-y-0.5 hover:shadow-sm transition-all"
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  {c.title}
+                </a>
+              );
+            })}
+          </div>
         </motion.nav>
 
         {/* Disclosure */}
