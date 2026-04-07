@@ -32,21 +32,21 @@ export default function BlogHubPage() {
   }, [search, activeCategory]);
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="pt-8 md:pt-14 pb-20 md:pb-28">
       <div className="max-w-[1120px] mx-auto px-5">
         {/* Header */}
-        <motion.div className="text-center mb-12" {...fadeUp}>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-primary mb-4">
+        <motion.div className="text-center mb-6 md:mb-8" {...fadeUp}>
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-brand-primary mb-2 md:mb-3">
             925 ADHD Blog
           </h1>
-          <p className="text-lg text-brand-muted max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-brand-muted max-w-2xl mx-auto">
             Real talk about ADHD, remote work, and making money your way.
           </p>
         </motion.div>
 
         {/* Search + Filters */}
         <motion.div
-          className="mb-10 flex flex-col sm:flex-row gap-4 items-center justify-center"
+          className="mb-5 flex flex-col sm:flex-row gap-4 items-center justify-center"
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
@@ -64,33 +64,35 @@ export default function BlogHubPage() {
 
         {/* Category pills */}
         <motion.div
-          className="mb-10 flex flex-wrap gap-2 justify-center"
+          className="mb-8 -mx-5 px-5 md:mx-0 md:px-0 overflow-x-auto md:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <button
-            onClick={() => setActiveCategory(null)}
-            className={`px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
-              activeCategory === null
-                ? 'bg-brand-teal-dark text-white border-brand-teal-dark'
-                : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-dark'
-            }`}
-          >
-            All
-          </button>
-          {categories.map((cat) => (
+          <div className="flex md:flex-wrap md:justify-center gap-2 w-max md:w-auto">
             <button
-              key={cat}
-              onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
-              className={`px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
-                activeCategory === cat
+              onClick={() => setActiveCategory(null)}
+              className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
+                activeCategory === null
                   ? 'bg-brand-teal-dark text-white border-brand-teal-dark'
                   : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-dark'
               }`}
             >
-              {cat}
+              All
             </button>
-          ))}
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
+                className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold border transition-all cursor-pointer ${
+                  activeCategory === cat
+                    ? 'bg-brand-teal-dark text-white border-brand-teal-dark'
+                    : 'bg-white text-brand-muted border-brand-border hover:border-brand-teal-dark/40 hover:text-brand-teal-dark'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </motion.div>
 
         {/* Blog Grid */}

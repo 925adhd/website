@@ -109,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-16">
+      <section className="pt-14 pb-8">
         <div className="max-w-[600px] mx-auto px-5 text-center">
           <motion.h2 {...fadeUp} className="text-[clamp(24px,3.5vw,36px)] font-black mb-3">
             Our Mission
@@ -120,24 +120,16 @@ export default function AboutPage() {
 
           <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.15 }} className="text-[16px] leading-relaxed text-brand-primary/65 space-y-4">
             <p>
-              If you&apos;ve ever felt like you don&apos;t fit traditional work, burned out by expectations made for someone else, or overwhelmed by where to even start &mdash; you&apos;re in the right place.
+              Traditional work wasn&apos;t built for ADHD brains. If you&apos;ve felt burned out, behind, or like you can&apos;t even figure out where to start, you&apos;re not broken. You&apos;re in the right place.
             </p>
             <p>
               This isn&apos;t a get-rich-quick scheme. It&apos;s a curated library of vetted income streams, organized for ADHD brains, updated monthly. No scams, no fluff.
             </p>
-            <p className="text-brand-primary/80 font-bold">
+            <p className="text-brand-primary/75 italic">
               Start small. Stack what works. Go at your own pace.
             </p>
           </motion.div>
 
-          <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.2 }} className="mt-8 text-center">
-            <a
-              href="https://buy.stripe.com/28E3cw1B33logABev67Zu02"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-white font-bold text-base hover:bg-[#24a68e] hover:-translate-y-px transition-all shadow-[0_4px_20px_rgba(43,186,161,0.25)]"
-            >
-              Get Instant Access &mdash; $9.25
-            </a>
-          </motion.div>
         </div>
       </section>
 
@@ -154,7 +146,7 @@ export default function AboutPage() {
           >
             Get Instant Access &mdash; $9.25
           </a>
-          <p className="inline-flex items-center gap-1.5 text-xs font-bold text-[#92400e] mt-3">
+          <p className="flex items-center justify-center gap-1.5 text-xs font-bold text-[#92400e] mt-4">
             {'🛡️'} 30-Day Money-Back Guarantee
           </p>
         </div>
