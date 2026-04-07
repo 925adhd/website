@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Quick Disclaimer | 925 ADHD',
     description: 'Important disclaimer about 925 ADHD. We vet opportunities but platforms change - always verify before signing up.',
-    url: '/disclaimer',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    url: 'https://925adhd.com/disclaimer',
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
 };
 

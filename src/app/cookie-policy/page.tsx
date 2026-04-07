@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Cookie Policy | 925 ADHD',
     description: 'Learn about the cookies 925 ADHD uses including Google Analytics and Facebook Pixel.',
-    url: '/cookie-policy',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    url: 'https://925adhd.com/cookie-policy',
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
 };
 

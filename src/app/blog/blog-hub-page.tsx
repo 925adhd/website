@@ -112,6 +112,7 @@ export default function BlogHubPage() {
               >
                 <Link
                   href={`/blog/${post.slug}`}
+                  aria-label={`Read: ${post.title}`}
                   className="group block bg-white rounded-2xl border border-brand-border overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300"
                 >
                   {/* Image */}

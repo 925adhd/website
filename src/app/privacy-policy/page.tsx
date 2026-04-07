@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Privacy Policy | 925 ADHD',
     description: 'Learn how 925 ADHD handles your data. We respect your privacy and keep things transparent.',
-    url: '/privacy-policy',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    url: 'https://925adhd.com/privacy-policy',
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Free ADHD-friendly tool: paste any job, side hustle, or platform and get a clear breakdown of effort, red flags, and energy cost before you waste time.',
     url: 'https://925adhd.com/free/energy-checker',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
 };
 
@@ -26,12 +26,26 @@ const jsonLd = {
   inLanguage: 'en-US',
 };
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://925adhd.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Free Resources', item: 'https://925adhd.com/free' },
+    { '@type': 'ListItem', position: 3, name: 'Is This Worth My Energy?', item: 'https://925adhd.com/free/energy-checker' },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <EnergyCheckerPage />
     </>

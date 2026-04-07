@@ -2,7 +2,8 @@
 
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Calendar, Tag, Mail, ShieldCheck } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { ArrowLeft, ArrowRight, Calendar, Tag, ShieldCheck, Gift } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPost, getRelatedPosts, formatDate } from '@/lib/blog-data';
@@ -131,12 +132,14 @@ export default function BlogPostPage({ slug }: { slug: string }) {
 
         {/* Email Capture */}
         <motion.div
-          className="max-w-[780px] mx-auto mt-8 rounded-2xl border border-brand-teal-dark/15 bg-brand-teal-dark/[.03] p-8 text-center"
+          className="max-w-[480px] mx-auto mt-8 text-center"
           {...fadeUp}
         >
-          <Mail className="w-6 h-6 text-brand-teal-deep mx-auto mb-2" />
-          <p className="font-bold text-brand-primary mb-1">Not ready yet? Get free tips instead.</p>
-          <p className="text-sm text-brand-primary/60 mb-4">3 ADHD-friendly side hustle ideas + brain-friendly work tips. No spam.</p>
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-brand-accent mb-4">Free Guide</p>
+          <h2 className="text-xl font-black tracking-tight mb-2">See 5 examples of what&apos;s inside.</h2>
+          <p className="text-sm text-brand-primary/75 mb-6 leading-relaxed">
+            Get 5 ADHD-friendly side hustles from the full list &mdash; free, instant access. No spam.
+          </p>
           <BlogEmailCapture />
         </motion.div>
 
@@ -197,47 +200,51 @@ export default function BlogPostPage({ slug }: { slug: string }) {
 }
 
 function BlogEmailCapture() {
+  const router = useRouter();
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: 'dfb5a758-6041-45a0-b76d-6ee784a406ec',
-        subject: 'New blog subscriber - 925 ADHD',
-        from_name: 'Blog Email Signup',
-        email,
-      }),
-    });
-    if (res.ok) setSubmitted(true);
-  }
-
-  if (submitted) {
-    return (
-      <p className="text-brand-green font-bold text-sm py-2">
-        {'✓'} You&apos;re in! Check your inbox soon.
-      </p>
-    );
+    if (!email.trim()) return;
+    setSending(true);
+    try {
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'dfb5a758-6041-45a0-b76d-6ee784a406ec',
+          subject: 'Blog page signup - 925 ADHD',
+          from_name: 'Blog Page Signup',
+          email,
+        }),
+      });
+    } catch {
+      // still redirect even if Web3Forms fails
+    }
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('guide_unlocked', '1');
+    }
+    router.push('/free/side-hustles');
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-[420px] mx-auto">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-[400px] mx-auto">
       <input
         type="email"
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Your email address"
-        className="flex-1 rounded-xl border border-brand-border bg-white px-4 py-3 text-sm text-brand-primary placeholder:text-brand-muted/50 outline-none focus:ring-2 focus:ring-brand-teal-dark/30 transition-shadow"
+        className="flex-1 rounded-xl border border-brand-border bg-white px-4 py-3 text-sm text-brand-primary placeholder:text-brand-primary/30 outline-none focus:ring-2 focus:ring-brand-accent/20 focus:border-brand-accent/30 transition-all"
       />
       <button
         type="submit"
-        className="rounded-xl bg-brand-teal-dark text-brand-primary font-bold px-5 py-3 text-sm hover:bg-[#0b5d57] transition-colors shrink-0"
+        disabled={sending}
+        className="rounded-xl bg-brand-accent text-white font-semibold px-5 py-3 text-sm hover:bg-[#6d28d9] transition-colors shrink-0 inline-flex items-center gap-2 disabled:opacity-60"
       >
-        Send Me Ideas
+        <Gift className="w-4 h-4" />
+        Get Free Guide
       </button>
     </form>
   );

@@ -78,6 +78,8 @@ export default async function BlogPostRoute({ params }: Props) {
       '@id': `https://925adhd.com/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
+    articleSection: post.category,
+    inLanguage: 'en-US',
   };
 
   const breadcrumbLd = {

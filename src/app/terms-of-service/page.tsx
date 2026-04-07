@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Terms of Service | 925 ADHD',
     description: 'Read the terms of service for 925 ADHD. One-time payment, lifetime access, 30-day money-back guarantee.',
-    url: '/terms-of-service',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    url: 'https://925adhd.com/terms-of-service',
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
 };
 

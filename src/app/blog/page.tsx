@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     title: '925 ADHD Blog',
     description:
       'Read articles about ADHD-friendly work strategies, focus tips, tools, and more.',
-    url: '/blog',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
+    url: 'https://925adhd.com/blog',
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: '925 ADHD Blog',
     description:
       'Read articles about ADHD-friendly work strategies, focus tips, tools, and more.',
-    images: ['/925-adhd-logo.png'],
+    images: ['https://925adhd.com/925-adhd-logo.png'],
   },
 };
 

@@ -38,7 +38,19 @@
   </url>
   <url>
     <loc>https://925adhd.com/free</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://925adhd.com/free/energy-checker</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://925adhd.com/free/best-adhd-products</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
