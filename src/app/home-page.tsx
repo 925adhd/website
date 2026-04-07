@@ -191,8 +191,8 @@ export default function HomePage() {
 
           <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }}>
             <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 text-[13px] md:text-sm">
-              <div className="text-center font-semibold text-brand-primary/30 text-xs uppercase tracking-wider pb-4">Other lists</div>
-              <div className="text-center font-semibold text-brand-green text-xs uppercase tracking-wider pb-4">925 ADHD</div>
+              <div className="text-center font-semibold text-brand-primary/70 text-xs uppercase tracking-wider pb-4">Other lists</div>
+              <div className="text-center font-semibold text-brand-green-text text-xs uppercase tracking-wider pb-4">925 ADHD</div>
 
               {[
                 { theirs: 'Outdated, unvetted links', ours: 'Vetted, tested, and maintained' },
@@ -203,7 +203,7 @@ export default function HomePage() {
                 { theirs: 'Has community forums', ours: 'Community coming soon' },
               ].map((row, i) => (
                 <React.Fragment key={i}>
-                  <div className="flex items-center gap-2.5 py-3.5 border-t border-brand-border text-brand-primary/40">
+                  <div className="flex items-center gap-2.5 py-3.5 border-t border-brand-border text-brand-primary/70">
                     <span className="text-red-300/80 shrink-0 text-xs">{'✗'}</span>
                     {row.theirs}
                   </div>
