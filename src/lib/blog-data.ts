@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     category: 'ADHD & Work',
     tags: ['ADHD', 'freelance', 'remote work', 'side hustle', 'self-employment'],
     publishedDate: '2026-04-07',
-    image: '/blog/work-from-home-with-adhd.webp',
+    image: '/blog/freelance-jobs-for-adhd.webp',
   },
 ];
 
