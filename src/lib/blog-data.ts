@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'best-adhd-apps-for-adults',
-    title: '15 Best ADHD Apps for Adults in 2026 (Free & Paid)',
+    title: 'Best ADHD Apps & Productivity Tools 2026: 15 Tested for Focus & Organization',
     description:
       'The best ADHD apps for adults, compared. We reviewed 15 apps for focus, organization, habits, content creation, and executive function — with pricing, pros, and honest picks.',
     category: 'Tools & apps',

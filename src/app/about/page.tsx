@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import AboutPage from './about-page';
 
 export const metadata: Metadata = {
-  title: 'About 925 ADHD - Meet Kara & Our Mission',
+  title: 'About 925 ADHD: Why I Built This for ADHD Remote Workers',
   description:
     'Meet Kara, the founder of 925 ADHD. Learn how her ADHD journey led to creating a platform that helps neurodivergent minds find flexible remote work.',
   alternates: { canonical: 'https://925adhd.com/about' },
   openGraph: {
-    title: 'About 925 ADHD - Meet Kara & Our Mission',
+    title: 'About 925 ADHD: Why I Built This for ADHD Remote Workers',
     description:
       'Meet Kara, the founder of 925 ADHD. Learn how her ADHD journey led to creating a platform that helps neurodivergent minds find flexible remote work.',
     url: 'https://925adhd.com/about',
@@ -22,7 +22,7 @@ const jsonLd = {
       '@type': 'AboutPage',
       '@id': 'https://925adhd.com/about#about',
       url: 'https://925adhd.com/about',
-      name: 'About 925 ADHD - Meet Kara & Our Mission',
+      name: 'About 925 ADHD: Why I Built This for ADHD Remote Workers',
       inLanguage: 'en-US',
     },
     {

@@ -428,6 +428,20 @@ export default function BestAdhdProductsPage() {
           })}
         </div>
 
+        {/* Related */}
+        <motion.div
+          className="mt-16 text-center"
+          {...fadeUp}
+        >
+          <p className="text-sm text-brand-primary/65">
+            Looking for software instead?{' '}
+            <Link href="/blog/best-adhd-apps-for-adults" className="font-semibold text-brand-teal-deep hover:underline">
+              See the best ADHD apps &amp; productivity tools
+            </Link>
+            .
+          </p>
+        </motion.div>
+
         {/* Final CTA */}
         <motion.div
           className="mt-20 md:mt-28 rounded-3xl border-2 border-brand-border bg-gradient-to-br from-brand-primary to-[#1e293b] p-8 md:p-10 text-center relative overflow-hidden"

@@ -104,6 +104,12 @@ export default function AboutPage() {
             <p className="text-center text-[17px] leading-relaxed text-brand-primary/70 italic mt-10 m-0">
               &ldquo;The system isn&apos;t just broken. It&apos;s leaving people like me and my son behind.&rdquo;
             </p>
+            <p className="text-center mt-6">
+              <Link href="/my-story" className="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal-deep hover:gap-2 transition-all">
+                Read the full story
+                <span aria-hidden="true">→</span>
+              </Link>
+            </p>
           </motion.div>
         </div>
       </section>

@@ -1125,6 +1125,14 @@ function BestAdhdAppsForAdults() {
           </p>
         </div>
       </div>
+
+      <p className="mt-8 text-brand-muted">
+        Looking for physical gear instead of software? See our roundup of the{' '}
+        <a href="/free/best-adhd-products" className="font-semibold text-brand-teal-deep hover:underline">
+          best ADHD products for adults
+        </a>
+        {' '}— noise machines, planners, fidgets, and more.
+      </p>
     </>
   );
 }
@@ -1330,6 +1338,14 @@ function WorkFromHomeWithAdhd() {
           </p>
         </div>
       </div>
+
+      <p className="mt-8 text-brand-muted">
+        Considering a specific job or platform? Run it through our free{' '}
+        <a href="/free/energy-checker" className="font-semibold text-brand-teal-deep hover:underline">
+          ADHD Energy Checker
+        </a>
+        {' '}before you commit your time.
+      </p>
     </>
   );
 }

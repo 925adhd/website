@@ -2,25 +2,25 @@ import type { Metadata } from 'next';
 import BlogHubPage from './blog-hub-page';
 
 export const metadata: Metadata = {
-  title: '925 ADHD Blog',
+  title: 'ADHD Work Strategies Blog: Remote Jobs, Focus Tips & Tools | 925 ADHD',
   description:
-    'Read articles about ADHD-friendly work strategies, focus tips, tools, and more.',
+    'Honest guides for ADHD adults: remote work strategies, focus techniques, side hustle picks, and the tools that actually help.',
   alternates: {
     canonical: 'https://925adhd.com/blog',
   },
   openGraph: {
     type: 'website',
-    title: '925 ADHD Blog',
+    title: 'ADHD Work Strategies Blog: Remote Jobs, Focus Tips & Tools | 925 ADHD',
     description:
-      'Read articles about ADHD-friendly work strategies, focus tips, tools, and more.',
+      'Honest guides for ADHD adults: remote work strategies, focus techniques, side hustle picks, and the tools that actually help.',
     url: 'https://925adhd.com/blog',
     images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '925 ADHD Blog',
+    title: 'ADHD Work Strategies Blog: Remote Jobs, Focus Tips & Tools | 925 ADHD',
     description:
-      'Read articles about ADHD-friendly work strategies, focus tips, tools, and more.',
+      'Honest guides for ADHD adults: remote work strategies, focus techniques, side hustle picks, and the tools that actually help.',
     images: ['https://925adhd.com/925-adhd-logo.png'],
   },
 };

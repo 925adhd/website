@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import FaqPage from './faq-page';
 
 export const metadata: Metadata = {
-  title: 'FAQ - Frequently Asked Questions | 925 ADHD',
+  title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started | 925 ADHD',
   description:
     'Get answers to common questions about 925 ADHD, pricing, access, and how to start earning online with ADHD.',
   alternates: { canonical: 'https://925adhd.com/faq' },
   openGraph: {
-    title: 'FAQ - Frequently Asked Questions | 925 ADHD',
+    title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started | 925 ADHD',
     description:
       'Get answers to common questions about 925 ADHD, pricing, access, and how to start earning online with ADHD.',
     url: 'https://925adhd.com/faq',
@@ -88,7 +88,7 @@ const jsonLd = {
   '@type': 'FAQPage',
   '@id': 'https://925adhd.com/faq#faqpage',
   url: 'https://925adhd.com/faq',
-  name: 'FAQ - Frequently Asked Questions | 925 ADHD',
+  name: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started | 925 ADHD',
   inLanguage: 'en-US',
   mainEntity: faqItems.map((item) => ({
     '@type': 'Question',

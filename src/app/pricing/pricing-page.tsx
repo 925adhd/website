@@ -98,6 +98,12 @@ export default function PricingPage() {
               <p className="text-center text-[11px] text-brand-primary/45 mt-2.5">
                 Instant access &bull; Any browser &bull; No downloads
               </p>
+              <p className="text-center text-xs text-brand-primary/60 mt-3">
+                Questions first?{' '}
+                <Link href="/faq" className="font-semibold text-brand-teal-deep hover:underline">
+                  Read the FAQ
+                </Link>
+              </p>
             </div>
           </motion.div>
         </div>
