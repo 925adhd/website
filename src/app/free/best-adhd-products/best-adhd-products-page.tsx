@@ -100,6 +100,16 @@ const categories: Category[] = [
     priceBg: 'bg-green-100 text-brand-green',
     products: [
       {
+        name: 'ADHD Cleaning Planner Notebook',
+        price: '$9',
+        url: 'https://amzn.to/4mfXhkJ',
+        isAffiliate: true,
+        image: '/amazon/adhd-cleaning-planner.webp',
+        hook: 'Cleaning checklists that don\u2019t shame you.',
+        quickHits: ['Daily, weekly, monthly chores', 'Built for ADHD pacing', 'No "perfect day" pressure'],
+        badge: 'Top pick',
+      },
+      {
         name: 'Panda Planner',
         price: '$17',
         url: 'https://amzn.to/4bW9SWO',
@@ -116,7 +126,6 @@ const categories: Category[] = [
         image: '/amazon/clever-fox-planner-pro.webp',
         hook: 'Undated. Zero shame for the days you skip.',
         quickHits: ['Goal-focused layout', 'Weekly + monthly', 'Picks up when you do'],
-        badge: 'Top pick',
       },
       {
         name: 'Rocketbook Fusion',
@@ -159,6 +168,16 @@ const categories: Category[] = [
         quickHits: ['Visual countdown', 'No math', 'Cures time blindness'],
       },
       {
+        name: '3-in-1 Visual Timer with Planning Board',
+        price: '$40',
+        url: 'https://amzn.to/4tym1XM',
+        isAffiliate: true,
+        image: '/amazon/visual-timer-planning-board.webp',
+        hook: 'Timer + schedule + chore chart in one.',
+        quickHits: ['Visual countdown', 'Daily routine board', 'Made for ADHD/autistic kids (works for adults too)'],
+        badge: 'Top pick',
+      },
+      {
         name: 'Amazon Echo Dot',
         price: '$50',
         url: 'https://amzn.to/4vaPatL',
@@ -166,7 +185,6 @@ const categories: Category[] = [
         image: '/amazon/amazon-echo-dot.webp',
         hook: '"Alexa, set a timer" — done.',
         quickHits: ['No phone needed', 'Voice reminders', 'Great for routines'],
-        badge: 'Top pick',
       },
     ],
   },
@@ -199,6 +217,15 @@ const categories: Category[] = [
         hook: 'Desk fidget people actually keep using.',
         quickHits: ['Silent + textured', '4 in a pack', 'Stupidly satisfying'],
         badge: 'Top pick',
+      },
+      {
+        name: 'Sensory Worry Stones (6-pack)',
+        price: '$10',
+        url: 'https://amzn.to/3PV87AM',
+        isAffiliate: true,
+        image: '/amazon/sensory-worry-stones.webp',
+        hook: 'Pocket-sized calm. Zero tech required.',
+        quickHits: ['Textured to rub when anxious', '6 in a pack', 'Discreet anywhere'],
       },
       {
         name: "L'AGRATY Weighted Lap Blanket (5 lbs)",
