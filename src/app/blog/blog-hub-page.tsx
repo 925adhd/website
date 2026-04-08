@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 import { Search, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogPosts, getAllCategories, formatDate } from '@/lib/blog-data';
+import { getAllPosts, getAllCategories, formatDate } from '@/lib/blog-data';
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -20,7 +20,7 @@ export default function BlogHubPage() {
   const categories = getAllCategories();
 
   const filtered = useMemo(() => {
-    return blogPosts.filter((post) => {
+    return getAllPosts().filter((post) => {
       const matchesSearch =
         !search ||
         post.title.toLowerCase().includes(search.toLowerCase()) ||

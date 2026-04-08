@@ -81,6 +81,14 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
+function sortByNewest(posts: BlogPost[]): BlogPost[] {
+  return [...posts].sort((a, b) => b.publishedDate.localeCompare(a.publishedDate));
+}
+
+export function getAllPosts(): BlogPost[] {
+  return sortByNewest(blogPosts);
+}
+
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
 }
@@ -90,7 +98,7 @@ export function getAllSlugs(): string[] {
 }
 
 export function getRelatedPosts(currentSlug: string, count = 3): BlogPost[] {
-  return blogPosts.filter((post) => post.slug !== currentSlug).slice(0, count);
+  return sortByNewest(blogPosts.filter((post) => post.slug !== currentSlug)).slice(0, count);
 }
 
 export function getAllCategories(): string[] {
