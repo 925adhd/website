@@ -500,11 +500,14 @@ export default function BestAdhdProductsPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
-              <p className="font-bold text-brand-primary mb-2">Have you actually tested these products?</p>
+              <p className="font-bold text-brand-primary mb-2">How did you choose these products?</p>
               <p className="text-[15px] text-brand-primary/70 leading-relaxed">
-                Yes. Every product on this list is something we (or close ADHD friends and family)
-                have personally used. Nothing is here just because it ranks in Amazon search or
-                has a high commission rate. If something stops working for us, it gets removed.
+                We curate based on three things: products consistently recommended in ADHD
+                communities (Reddit, forums, real users), products with strong reviews from people
+                who specifically mention ADHD or sensory needs, and items with design features that
+                match how ADHD brains work (visual feedback, low setup friction, tactile or audio
+                cues). We don&apos;t claim to have personally tested every item. We&apos;ve tested
+                some, researched others, and remove any that get bad community feedback over time.
               </p>
             </div>
             <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">

@@ -67,10 +67,10 @@ const faqLd = {
     },
     {
       '@type': 'Question',
-      name: 'Have you actually tested these products?',
+      name: 'How did you choose these products?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Every product on this list is something we (or close ADHD friends and family) have personally used. Nothing is here just because it ranks in Amazon search or has a high commission rate. If something stops working for us, it gets removed.',
+        text: 'We curate based on three things: products consistently recommended in ADHD communities (Reddit, forums, real users), products with strong reviews from people who specifically mention ADHD or sensory needs, and items with design features that match how ADHD brains work (visual feedback, low setup friction, tactile or audio cues). We do not claim to have personally tested every item. We have tested some, researched others, and remove any that get bad community feedback over time.',
       },
     },
     {
