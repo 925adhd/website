@@ -1864,6 +1864,313 @@ function CantWork9To5WithAdhd() {
   );
 }
 
+/* ─── Article 7 ─── */
+function FreelanceJobsForAdhd() {
+  return (
+    <>
+      <div className={calloutInfo}>
+        <span className="text-xl shrink-0">&#9889;</span>
+        <p>
+          <strong>TL;DR:</strong> Freelancing can fit ADHD well &mdash; <em>if</em> you pick paths
+          with low admin, fast payouts, and async deadlines. Not all freelance work is equal. Below
+          are 6 paths that match how ADHD brains actually function, plus the ones to skip and a
+          three-step plan to start this week.
+        </p>
+      </div>
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">Why &ldquo;Just Go Freelance&rdquo; Often Backfires for ADHD</h2>
+      <p className="mb-4">
+        On paper, freelancing sounds perfect for an ADHD brain. <strong>No boss. No commute. Work
+        when your energy is high.</strong> Pick projects you actually care about. Skip the meetings.
+      </p>
+      <p className="mb-4">
+        In reality, a lot of freelance work hides a second job underneath: <strong>finding clients,
+        writing proposals, chasing invoices, managing your own taxes, and keeping your calendar
+        coherent.</strong> That second job is mostly executive function. Which is the exact thing
+        ADHD makes harder.
+      </p>
+      <div className={calloutWarning}>
+        <span className="text-xl shrink-0">&#9888;&#65039;</span>
+        <p>
+          The freelance paths that destroy ADHD brains are the ones with high admin overhead and
+          slow, inconsistent pay. The paths that work are the ones where you can <strong>show up,
+          do the task, and get paid</strong> &mdash; without 12 hours of pre-work each week.
+        </p>
+      </div>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">What Makes a Freelance Job ADHD-Friendly</h2>
+      <p className="mb-4">
+        Before the list, here&apos;s the filter. A freelance path fits ADHD when most of these are
+        true:
+      </p>
+      <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Low admin overhead.</strong> You spend most of your time doing the work, not selling it.</li>
+        <li><strong>Fast payout.</strong> You get paid in days or a week, not 60-day net terms.</li>
+        <li><strong>Async by default.</strong> No live calls required. You work when your brain shows up.</li>
+        <li><strong>Project-based, not hourly.</strong> Hourly tracking is its own ADHD nightmare.</li>
+        <li><strong>Discrete tasks with clear endpoints.</strong> You can finish something today and feel done.</li>
+        <li><strong>Low startup cost.</strong> No expensive software, certifications, or upfront investment.</li>
+      </ul>
+      <p className="mb-4">
+        If a freelance path fails 3+ of those filters, it&apos;s probably going to chew you up. That&apos;s
+        not a personal failure. It&apos;s a fit problem.
+      </p>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">6 Freelance Paths That Actually Fit ADHD</h2>
+      <p className="mb-6">
+        Each of these is something real ADHD adults are doing today. Each one has tradeoffs &mdash;
+        I&apos;m not going to pretend any of them are passive income.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">1. Freelance Writing (Blog Posts &amp; Copywriting)</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Writing articles, blog posts, product descriptions, or short
+        marketing copy for businesses that don&apos;t have an in-house writer.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> Hyperfocus is a real asset here. You can knock out a
+        1,500-word post in one good afternoon, then take two days off. Pay is per piece, so a slow
+        day doesn&apos;t cost you. Most communication is async over email or Slack.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> Rates start low. The first 3&ndash;6 months you&apos;re likely
+        earning $30&ndash;$60 per article on content marketplaces. Once you have samples and a niche
+        (B2B SaaS, finance, health, etc.) rates climb fast &mdash; $150 to $500+ per piece is normal.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Pick one topic you already know something about. Write three
+        sample articles on your own. Pitch small businesses or sign up to a marketplace like
+        Contently, ClearVoice, or even Fiverr to get your first paid bylines.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">2. Niche Virtual Assistant Work</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Doing recurring tasks for one or two clients &mdash; inbox
+        triage, scheduling, data entry, light research, booking travel, formatting documents.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> The trick is going <em>niche</em>. A generalist VA juggling
+        five clients with different systems is an ADHD nightmare. A specialist VA for one industry
+        (real estate agents, podcasters, Etsy sellers) does the same handful of tasks repeatedly,
+        which means low context-switching and less decision fatigue.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> You need to be reliable on the things your client depends on.
+        If inbox triage is your job and you go dark for two days, you lose the client. Pair this
+        with a calendar reminder system you actually use.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Pick one industry you understand. Write a one-page service
+        list. Reach out to 10 small business owners in that niche on LinkedIn or directly through
+        their websites. Charge $20&ndash;$35/hour to start, raise it within 90 days.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">3. Transcription &amp; Captioning</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Listening to audio or video and typing what you hear. Sometimes
+        cleaning up auto-generated captions. Sometimes timestamping for accessibility.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> It&apos;s the ideal &ldquo;low-energy work&rdquo; option.
+        You don&apos;t need to think hard or be creative. You can do it with a podcast brain
+        &mdash; half-engaged, half on autopilot &mdash; and still get paid. Discrete files with
+        clear deadlines. No client meetings. Pay per audio minute or per file.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> Pay is modest. Entry-level rates run roughly $0.30&ndash;$1.10
+        per audio minute, which works out to $8&ndash;$25/hour depending on your speed and the
+        difficulty of the audio. Specialized work (legal, medical) pays significantly more but
+        requires training.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Apply to Rev, GoTranscript, Scribie, or TranscribeMe. Most
+        require a short test. Once accepted you can pick up files whenever you want, which is the
+        ADHD win.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">4. AI Training &amp; Data Tasks</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Rating AI responses, writing example prompts, comparing outputs,
+        labeling images, fact-checking. Companies like Outlier, DataAnnotation, and Scale AI pay
+        people to make their models smarter.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> Bite-sized tasks. Asynchronous. Pay is hourly but you
+        choose when you log in. The work is novel enough that boredom doesn&apos;t crater your
+        focus the way generic data entry does. Pay can be surprisingly good for the qualification
+        bar &mdash; $15&ndash;$40+/hour for general tasks, more for STEM or coding domains.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> Work availability is inconsistent. You might have 20 hours
+        available one week and zero the next. It&apos;s great as a supplement, harder as a sole
+        income source.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Sign up for one or two platforms. Take the qualification
+        tests. Don&apos;t lock yourself into one &mdash; the platforms that have work this month
+        won&apos;t necessarily have work next month.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">5. Small Project Gigs (Fiverr / Upwork)</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Listing a specific micro-service (logo cleanup, podcast audio
+        editing, resume formatting, Notion template setup, Canva design) and letting buyers come to
+        you.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> One skill, repeated. You don&apos;t pitch &mdash; clients
+        find you. Each gig has a defined scope and deliverable. You get a clean dopamine hit at
+        completion. Payment goes through the platform, so there&apos;s no chasing invoices.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> The first 90 days are slow. You need 5&ndash;10 reviews before
+        the algorithm surfaces your gig. Price low at first, then raise rates as your review count
+        builds. Avoid scope creep by being explicit about what&apos;s included and what costs extra.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Pick one specific skill. Look at the top 5 sellers offering
+        the same thing. Make your gig more specific than theirs (e.g., not &ldquo;logo design&rdquo;
+        but &ldquo;modern minimalist logo for coffee shops&rdquo;). Niche wins.
+      </p>
+
+      <h3 className="text-xl font-bold mt-8 mb-3">6. Voice Acting &amp; Narration</h3>
+      <p className="mb-4">
+        <strong>What it is:</strong> Reading scripts for ads, e-learning courses, audiobooks,
+        explainer videos, IVR phone systems, or YouTube voiceovers.
+      </p>
+      <p className="mb-4">
+        <strong>Why it fits ADHD:</strong> If you have a clear voice and a quiet room, this is
+        deeply project-based. You record the file, deliver it, get paid. No meetings. Hyperfocus
+        sessions work in your favor &mdash; you can knock out a 2,000-word script in an afternoon.
+        Once you have a few clients, you can earn $50&ndash;$300+ per short piece.
+      </p>
+      <p className="mb-4">
+        <strong>The catch:</strong> You need a quiet recording space and a decent USB mic ($80&ndash;$150).
+        Auditions are unpaid and the rejection rate is high at first. Treat the first 60 days as
+        skill-building, not income.
+      </p>
+      <p className="mb-4">
+        <strong>How to start:</strong> Record 3&ndash;4 sample reads in different styles. Sign up
+        for Voices.com, Voice123, or Bodalgo. Audition daily for two weeks before judging results.
+      </p>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">Freelance Paths to Be Careful With</h2>
+      <p className="mb-4">
+        These can work for some ADHD brains, but they come with extra friction. Go in with eyes
+        open.
+      </p>
+      <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Web design and development.</strong> Great creative fit, but client revisions and scope creep can be brutal. Charge fixed-price projects, never hourly.</li>
+        <li><strong>Bookkeeping and accounting.</strong> Stable income, but high attention-to-detail demands and recurring monthly deadlines. ADHD-friendly only if you build airtight systems.</li>
+        <li><strong>Long-form video editing.</strong> Can be hyperfocus-friendly, but file management and revision cycles will eat you alive without templates.</li>
+        <li><strong>Coaching and consulting.</strong> Live calls, prep work, follow-ups. Lots of context-switching. Better as a Phase 2 move once you have an established niche.</li>
+      </ul>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">How to Actually Start This Week</h2>
+      <p className="mb-4">
+        Most freelance advice tells you to spend three months building a portfolio, a personal
+        brand, a niche, an email list, and a content strategy before you earn a dollar. For an ADHD
+        brain, that&apos;s a recipe for never starting.
+      </p>
+      <div className={calloutSuccess}>
+        <span className="text-xl shrink-0">&#9989;</span>
+        <p>
+          <strong>The 3-step ADHD freelance start:</strong> Pick one path. Apply or list one gig.
+          Take the first paid job, even if it pays badly. Momentum beats perfect.
+        </p>
+      </div>
+      <p className="mb-4"><strong>Day 1:</strong> Pick the path from above that feels least exhausting to think about. Not the most lucrative &mdash; the one your brain doesn&apos;t flinch from.</p>
+      <p className="mb-4"><strong>Day 2:</strong> Sign up for the relevant platform OR write the first pitch / sample. Limit this to 90 minutes. Done is better than perfect.</p>
+      <p className="mb-4"><strong>Day 3&ndash;7:</strong> Apply, audition, or list daily. One per day. Ten total. Then wait for the first yes.</p>
+      <p className="mb-4">
+        The goal of week one is not to earn rent. It&apos;s to break the inertia. The first $50 is
+        worth more than a perfectly-crafted brand strategy you&apos;ll never finish.
+      </p>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">Before You Commit: Gut-Check the Path</h2>
+      <p className="mb-4">
+        If you&apos;re looking at a specific freelance platform, gig type, or job listing and
+        you&apos;re not sure if it&apos;s legit or worth your energy, run it through our free{' '}
+        <Link href="/free/energy-checker" className="font-semibold text-brand-teal-deep hover:underline">
+          ADHD Energy Checker
+        </Link>
+        . Paste the platform name or the job description and you&apos;ll get a plain-English
+        breakdown of effort, red flags, payout reality, and whether it tends to fit ADHD brains.
+      </p>
+      <p className="mb-4">
+        It won&apos;t make the decision for you, but it will save you from spending three weeks on
+        a platform that pays in points or only releases payouts at $100 thresholds.
+      </p>
+
+      <hr className={divider} />
+
+      <h2 className="text-2xl font-extrabold mt-10 mb-4">Frequently Asked Questions</h2>
+      <div className="space-y-4">
+        <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
+          <p className="font-bold mb-2">Is freelancing actually realistic with ADHD?</p>
+          <p className="text-brand-muted">
+            Yes, but the path matters more than the discipline. Pick freelance work with low admin
+            and fast payouts and you remove most of the friction that breaks ADHD brains. Pick work
+            that requires constant client management and rigid deadlines and you&apos;ll burn out.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
+          <p className="font-bold mb-2">How much can I realistically earn freelancing with ADHD?</p>
+          <p className="text-brand-muted">
+            First 90 days: $0&ndash;$500/month while you find your footing. Months 4&ndash;12:
+            $500&ndash;$2,500/month part-time, depending on path and effort. Year two and beyond:
+            $2,000&ndash;$8,000+/month if you specialize and raise rates. These are honest ranges,
+            not screenshots of someone&apos;s best month.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
+          <p className="font-bold mb-2">Do I need to register a business or LLC to start freelancing?</p>
+          <p className="text-brand-muted">
+            Not on day one. In the US you can start as a sole proprietor and report income on your
+            personal tax return. Form an LLC later if it makes sense (liability protection, tax
+            treatment, etc.). Don&apos;t let paperwork block you from starting.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
+          <p className="font-bold mb-2">What if I can&apos;t hold one client for very long?</p>
+          <p className="text-brand-muted">
+            That&apos;s common with ADHD &mdash; novelty drives engagement. Pick paths where short
+            engagements are normal: writing per article, gig-based design work, transcription,
+            voiceover. Avoid retainer-heavy paths where you&apos;re expected to stay long-term.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
+          <p className="font-bold mb-2">What if I&apos;ve tried freelancing before and it didn&apos;t stick?</p>
+          <p className="text-brand-muted">
+            The path probably wasn&apos;t the fit, not you. If you tried general VA work and burned
+            out, try transcription or AI tasks. If writing felt like pulling teeth, try voiceover
+            or microtasks. ADHD-friendly work is real, but the specific match matters.
+          </p>
+        </div>
+      </div>
+
+      <p className="mt-8 text-brand-muted">
+        Want a curated shortlist that&apos;s already vetted?{' '}
+        <Link href="/#pricing" className="font-semibold text-brand-teal-deep hover:underline">
+          925 ADHD lists 70+ ADHD-friendly ways to earn online
+        </Link>
+        {' '}&mdash; tagged by energy, effort, and payout speed, with the scams already filtered
+        out. One-time $9.25, lifetime updates.
+      </p>
+    </>
+  );
+}
+
 /* ─── content map ─── */
 export const blogContentMap: Record<string, () => React.JSX.Element> = {
   'why-wfh-advice-fails-adhd': WhyWfhAdviceFailsAdhd,
@@ -1872,4 +2179,5 @@ export const blogContentMap: Record<string, () => React.JSX.Element> = {
   'work-from-home-with-adhd': WorkFromHomeWithAdhd,
   'what-is-ring-of-fire-adhd': WhatIsRingOfFireAdhd,
   'cant-work-9-to-5-with-adhd': CantWork9To5WithAdhd,
+  'freelance-jobs-for-adhd': FreelanceJobsForAdhd,
 };

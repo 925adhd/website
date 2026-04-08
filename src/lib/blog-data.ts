@@ -69,6 +69,16 @@ export const blogPosts: BlogPost[] = [
     publishedDate: '2026-02-01',
     image: '/blog/cant-work-9-to-5-with-adhd.webp',
   },
+  {
+    slug: 'freelance-jobs-for-adhd',
+    title: 'Freelance Jobs for ADHD: 6 Paths That Actually Fit How Your Brain Works',
+    description:
+      'Most freelance advice ignores ADHD. Here are 6 freelance paths that fit fluctuating energy, plus the ones to skip — with honest tradeoffs and how to start this week.',
+    category: 'ADHD & Work',
+    tags: ['ADHD', 'freelance', 'remote work', 'side hustle', 'self-employment'],
+    publishedDate: '2026-04-07',
+    image: '/blog/work-from-home-with-adhd.webp',
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
