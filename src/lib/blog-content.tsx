@@ -1131,7 +1131,7 @@ function BestAdhdAppsForAdults() {
         <a href="/free/best-adhd-products" className="font-semibold text-brand-teal-deep hover:underline">
           best ADHD products for adults
         </a>
-        {' '}— noise machines, planners, fidgets, and more.
+        : noise machines, planners, fidgets, and more.
       </p>
     </>
   );
@@ -1871,8 +1871,8 @@ function FreelanceJobsForAdhd() {
       <div className={calloutInfo}>
         <span className="text-xl shrink-0">&#9889;</span>
         <p>
-          <strong>TL;DR:</strong> Freelancing can fit ADHD well &mdash; <em>if</em> you pick paths
-          with low admin, fast payouts, and async deadlines. Not all freelance work is equal. Below
+          <strong>TL;DR:</strong> Freelancing can fit ADHD well, <em>if</em> you pick paths with
+          low admin, fast payouts, and async deadlines. Not all freelance work is equal. Below
           are 6 paths that match how ADHD brains actually function, plus the ones to skip and a
           three-step plan to start this week.
         </p>
@@ -1894,7 +1894,7 @@ function FreelanceJobsForAdhd() {
         <p>
           The freelance paths that destroy ADHD brains are the ones with high admin overhead and
           slow, inconsistent pay. The paths that work are the ones where you can <strong>show up,
-          do the task, and get paid</strong> &mdash; without 12 hours of pre-work each week.
+          do the task, and get paid</strong>, without 12 hours of pre-work each week.
         </p>
       </div>
 
@@ -1922,7 +1922,7 @@ function FreelanceJobsForAdhd() {
 
       <h2 className="text-2xl font-extrabold mt-10 mb-4">6 Freelance Paths That Actually Fit ADHD</h2>
       <p className="mb-6">
-        Each of these is something real ADHD adults are doing today. Each one has tradeoffs &mdash;
+        Each of these is something real ADHD adults are doing today. Each one has tradeoffs.
         I&apos;m not going to pretend any of them are passive income.
       </p>
 
@@ -1939,7 +1939,7 @@ function FreelanceJobsForAdhd() {
       <p className="mb-4">
         <strong>The catch:</strong> Rates start low. The first 3&ndash;6 months you&apos;re likely
         earning $30&ndash;$60 per article on content marketplaces. Once you have samples and a niche
-        (B2B SaaS, finance, health, etc.) rates climb fast &mdash; $150 to $500+ per piece is normal.
+        (B2B SaaS, finance, health, etc.) rates climb fast. $150 to $500+ per piece is normal.
       </p>
       <p className="mb-4">
         <strong>How to start:</strong> Pick one topic you already know something about. Write three
@@ -1949,7 +1949,7 @@ function FreelanceJobsForAdhd() {
 
       <h3 className="text-xl font-bold mt-8 mb-3">2. Niche Virtual Assistant Work</h3>
       <p className="mb-4">
-        <strong>What it is:</strong> Doing recurring tasks for one or two clients &mdash; inbox
+        <strong>What it is:</strong> Doing recurring tasks for one or two clients: inbox
         triage, scheduling, data entry, light research, booking travel, formatting documents.
       </p>
       <p className="mb-4">
@@ -1977,7 +1977,7 @@ function FreelanceJobsForAdhd() {
       <p className="mb-4">
         <strong>Why it fits ADHD:</strong> It&apos;s the ideal &ldquo;low-energy work&rdquo; option.
         You don&apos;t need to think hard or be creative. You can do it with a podcast brain
-        &mdash; half-engaged, half on autopilot &mdash; and still get paid. Discrete files with
+        (half-engaged, half on autopilot) and still get paid. Discrete files with
         clear deadlines. No client meetings. Pay per audio minute or per file.
       </p>
       <p className="mb-4">
@@ -2002,7 +2002,7 @@ function FreelanceJobsForAdhd() {
         <strong>Why it fits ADHD:</strong> Bite-sized tasks. Asynchronous. Pay is hourly but you
         choose when you log in. The work is novel enough that boredom doesn&apos;t crater your
         focus the way generic data entry does. Pay can be surprisingly good for the qualification
-        bar &mdash; $15&ndash;$40+/hour for general tasks, more for STEM or coding domains.
+        bar: $15&ndash;$40+/hour for general tasks, more for STEM or coding domains.
       </p>
       <p className="mb-4">
         <strong>The catch:</strong> Work availability is inconsistent. You might have 20 hours
@@ -2011,7 +2011,7 @@ function FreelanceJobsForAdhd() {
       </p>
       <p className="mb-4">
         <strong>How to start:</strong> Sign up for one or two platforms. Take the qualification
-        tests. Don&apos;t lock yourself into one &mdash; the platforms that have work this month
+        tests. Don&apos;t lock yourself into one. The platforms that have work this month
         won&apos;t necessarily have work next month.
       </p>
 
@@ -2022,7 +2022,7 @@ function FreelanceJobsForAdhd() {
         you.
       </p>
       <p className="mb-4">
-        <strong>Why it fits ADHD:</strong> One skill, repeated. You don&apos;t pitch &mdash; clients
+        <strong>Why it fits ADHD:</strong> One skill, repeated. You don&apos;t pitch. Clients
         find you. Each gig has a defined scope and deliverable. You get a clean dopamine hit at
         completion. Payment goes through the platform, so there&apos;s no chasing invoices.
       </p>
@@ -2045,7 +2045,7 @@ function FreelanceJobsForAdhd() {
       <p className="mb-4">
         <strong>Why it fits ADHD:</strong> If you have a clear voice and a quiet room, this is
         deeply project-based. You record the file, deliver it, get paid. No meetings. Hyperfocus
-        sessions work in your favor &mdash; you can knock out a 2,000-word script in an afternoon.
+        sessions work in your favor. You can knock out a 2,000-word script in an afternoon.
         Once you have a few clients, you can earn $50&ndash;$300+ per short piece.
       </p>
       <p className="mb-4">
@@ -2087,7 +2087,7 @@ function FreelanceJobsForAdhd() {
           Take the first paid job, even if it pays badly. Momentum beats perfect.
         </p>
       </div>
-      <p className="mb-4"><strong>Day 1:</strong> Pick the path from above that feels least exhausting to think about. Not the most lucrative &mdash; the one your brain doesn&apos;t flinch from.</p>
+      <p className="mb-4"><strong>Day 1:</strong> Pick the path from above that feels least exhausting to think about. Not the most lucrative. The one your brain doesn&apos;t flinch from.</p>
       <p className="mb-4"><strong>Day 2:</strong> Sign up for the relevant platform OR write the first pitch / sample. Limit this to 90 minutes. Done is better than perfect.</p>
       <p className="mb-4"><strong>Day 3&ndash;7:</strong> Apply, audition, or list daily. One per day. Ten total. Then wait for the first yes.</p>
       <p className="mb-4">
@@ -2144,7 +2144,7 @@ function FreelanceJobsForAdhd() {
         <div className="rounded-2xl border border-brand-border bg-brand-panel p-5">
           <p className="font-bold mb-2">What if I can&apos;t hold one client for very long?</p>
           <p className="text-brand-muted">
-            That&apos;s common with ADHD &mdash; novelty drives engagement. Pick paths where short
+            That&apos;s common with ADHD. Novelty drives engagement. Pick paths where short
             engagements are normal: writing per article, gig-based design work, transcription,
             voiceover. Avoid retainer-heavy paths where you&apos;re expected to stay long-term.
           </p>
@@ -2164,7 +2164,7 @@ function FreelanceJobsForAdhd() {
         <Link href="/#pricing" className="font-semibold text-brand-teal-deep hover:underline">
           925 ADHD lists 70+ ADHD-friendly ways to earn online
         </Link>
-        {' '}&mdash; tagged by energy, effort, and payout speed, with the scams already filtered
+        : tagged by energy, effort, and payout speed, with the scams already filtered
         out. One-time $9.25, lifetime updates.
       </p>
     </>

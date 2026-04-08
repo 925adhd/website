@@ -108,26 +108,28 @@ export default function BlogPostPage({ slug }: { slug: string }) {
             That&apos;s exactly why 925 ADHD exists.
           </p>
           <p className="text-brand-muted mb-4 max-w-lg mx-auto">
-            70+ vetted ways to earn online &mdash; tagged by energy level, effort, and payout speed.
+            70+ vetted ways to earn online, tagged by energy level, effort, and payout speed.
             Built for brains like yours.
           </p>
           <p className="font-semibold text-brand-primary mb-6">
             Small systems. Low friction. Built for real life.
           </p>
-          <Link
-            href="/#pricing"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-brand-primary font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#0b5d57] hover:-translate-y-0.5 transition-all"
-          >
-            Get Instant Access &mdash; $9.25
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <p className="inline-flex items-center gap-1.5 text-xs font-bold text-[#92400e] mt-3">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            30-Day Money-Back Guarantee
-          </p>
-          <p className="text-xs text-brand-muted mt-2 font-semibold">
-            Not a job placement service. No income guarantees.
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <Link
+              href="/#pricing"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-brand-teal-dark text-brand-primary font-bold text-[15px] shadow-[0_4px_20px_rgba(43,186,161,0.25)] hover:bg-[#0b5d57] hover:-translate-y-0.5 transition-all"
+            >
+              Get Instant Access $9.25
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <p className="inline-flex items-center gap-1.5 text-xs font-bold text-[#92400e]">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              30-Day Money-Back Guarantee
+            </p>
+            <p className="text-xs text-brand-muted font-semibold">
+              Not a job placement service. No income guarantees.
+            </p>
+          </div>
         </motion.div>
 
         {/* Email Capture */}

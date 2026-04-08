@@ -183,7 +183,7 @@ const categories: Category[] = [
         url: 'https://amzn.to/4vaPatL',
         isAffiliate: true,
         image: '/amazon/amazon-echo-dot.webp',
-        hook: '"Alexa, set a timer" — done.',
+        hook: '"Alexa, set a timer." Done.',
         quickHits: ['No phone needed', 'Voice reminders', 'Great for routines'],
       },
     ],
@@ -311,18 +311,35 @@ export default function BestAdhdProductsPage() {
         </motion.div>
 
         {/* Hero */}
-        <motion.header className="max-w-3xl mb-6" {...fadeUp}>
+        <motion.header className="max-w-3xl mx-auto text-center mb-8" {...fadeUp}>
           <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-teal-deep bg-teal-100 px-3 py-1.5 rounded-full mb-3">
             Product Picks
           </span>
-          <h1 className="text-4xl md:text-[44px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-3">
+          <h1 className="text-4xl md:text-[44px] font-black tracking-[-0.02em] leading-[1.05] text-brand-primary mb-5">
             Best products for ADHD adults.
           </h1>
-          <p className="text-base md:text-lg text-brand-muted leading-relaxed max-w-xl">
-            A short list, grouped by category. Everything here is something we
-            use or have tested.
-          </p>
+          <div className="text-[15px] md:text-base leading-relaxed text-brand-primary/75 space-y-3 text-left">
+            <p>
+              Most ADHD product lists are noise, ranked by Amazon affiliate payout instead of
+              whether the thing actually helps. Every pick below earned its spot by solving a real
+              ADHD problem: time blindness, sensory overload, executive dysfunction, decision
+              fatigue, or hyperfocus crash. Cheapest picks start under $20.
+            </p>
+            <p>
+              These are tools, not treatment. They won&apos;t fix anything. But on a hard day,
+              the right tool makes the day a little less hard.
+            </p>
+          </div>
         </motion.header>
+
+        {/* Disclosure */}
+        <motion.div
+          className="max-w-2xl mx-auto mb-6 rounded-xl border border-brand-border bg-white/60 px-5 py-2.5 text-xs text-brand-muted text-center"
+          {...fadeUp}
+        >
+          <strong className="text-brand-primary/70">Heads up:</strong> some links are
+          affiliates. We only share stuff we&apos;d buy ourselves.
+        </motion.div>
 
         {/* Category jump chips */}
         <motion.nav
@@ -346,15 +363,6 @@ export default function BestAdhdProductsPage() {
             })}
           </div>
         </motion.nav>
-
-        {/* Disclosure */}
-        <motion.div
-          className="max-w-2xl mx-auto mb-8 rounded-xl border border-brand-border bg-white/60 px-5 py-2.5 text-xs text-brand-muted text-center"
-          {...fadeUp}
-        >
-          <strong className="text-brand-primary/70">Heads up:</strong> some links are
-          affiliates. We only share stuff we&apos;d buy ourselves.
-        </motion.div>
 
         {/* Categories */}
         <div className="space-y-16 md:space-y-20">
@@ -468,6 +476,64 @@ export default function BestAdhdProductsPage() {
             .
           </p>
         </motion.div>
+
+        {/* FAQ */}
+        <motion.section
+          className="mt-20 md:mt-24 max-w-3xl mx-auto"
+          {...fadeUp}
+          aria-label="Frequently asked questions"
+        >
+          <h2 className="text-2xl md:text-3xl font-black text-brand-primary text-center mb-3">
+            Frequently asked questions
+          </h2>
+          <p className="text-center text-brand-primary/65 mb-10 text-[15px]">
+            Things people ask before buying.
+          </p>
+          <div className="space-y-4">
+            <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
+              <p className="font-bold text-brand-primary mb-2">What makes a product &ldquo;ADHD-friendly&rdquo;?</p>
+              <p className="text-[15px] text-brand-primary/70 leading-relaxed">
+                A product is ADHD-friendly when it lowers friction, requires little setup, gives
+                clear feedback, and works the way your brain actually works on a hard day. Things
+                like visual timers, tactile fidgets, and noise control reduce decision fatigue and
+                sensory overload, the two biggest ADHD energy drains.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
+              <p className="font-bold text-brand-primary mb-2">Have you actually tested these products?</p>
+              <p className="text-[15px] text-brand-primary/70 leading-relaxed">
+                Yes. Every product on this list is something we (or close ADHD friends and family)
+                have personally used. Nothing is here just because it ranks in Amazon search or
+                has a high commission rate. If something stops working for us, it gets removed.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
+              <p className="font-bold text-brand-primary mb-2">Do you earn money if I buy through your links?</p>
+              <p className="text-[15px] text-brand-primary/70 leading-relaxed">
+                Yes. Most product links on this page are Amazon affiliate links, which means
+                we earn a small commission at no extra cost to you if you buy something. This helps
+                keep 925 ADHD running. We only recommend things we genuinely believe help.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
+              <p className="font-bold text-brand-primary mb-2">Are these only useful if I have diagnosed ADHD?</p>
+              <p className="text-[15px] text-brand-primary/70 leading-relaxed">
+                No. Most of these tools help anyone who struggles with focus, time blindness,
+                sensory overload, executive function, or organization. You do not need a diagnosis
+                to benefit from a visual timer, noise-canceling headphones, or a planner that fits
+                how you actually live.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-brand-border bg-white p-5 md:p-6">
+              <p className="font-bold text-brand-primary mb-2">How often is this list updated?</p>
+              <p className="text-[15px] text-brand-primary/70 leading-relaxed">
+                We review the list every few months. Products that go out of stock, get worse, or
+                get replaced by better options are removed. New picks are added when we find
+                something that earns its spot, not on a fixed schedule.
+              </p>
+            </div>
+          </div>
+        </motion.section>
 
         {/* Final CTA */}
         <motion.div

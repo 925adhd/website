@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import BestAdhdProductsPage from './best-adhd-products-page';
 
 export const metadata: Metadata = {
-  title: 'Best Products for ADHD Adults (2026) | 925 ADHD',
+  title: '18 Best ADHD Products for Adults (2026 Tested Picks) | 925 ADHD',
   description:
-    'Handpicked ADHD-friendly products — noise machines, planners, fidgets, focus tools, and more. Honest picks rated by energy and usefulness.',
+    '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness instead of hype. Honest picks across budgets.',
   alternates: { canonical: 'https://925adhd.com/free/best-adhd-products' },
   openGraph: {
-    title: 'Best Products for ADHD Adults (2026) | 925 ADHD',
+    title: '18 Best ADHD Products for Adults (2026 Tested Picks) | 925 ADHD',
     description:
-      'Handpicked ADHD-friendly products — noise machines, planners, fidgets, focus tools, and more.',
+      '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness instead of hype.',
     url: 'https://925adhd.com/free/best-adhd-products',
     images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
   },
@@ -25,12 +25,95 @@ const breadcrumbLd = {
   ],
 };
 
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Best ADHD Products for Adults 2026',
+  description: 'A curated, tested list of ADHD-friendly products for focus, planning, fidgets, timers, lighting, and focus music.',
+  numberOfItems: 18,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Magicteam White Noise Machine', url: 'https://925adhd.com/free/best-adhd-products#noise' },
+    { '@type': 'ListItem', position: 2, name: 'Loop Quiet Earplugs', url: 'https://925adhd.com/free/best-adhd-products#noise' },
+    { '@type': 'ListItem', position: 3, name: 'Sony WH-1000XM5 Headphones', url: 'https://925adhd.com/free/best-adhd-products#noise' },
+    { '@type': 'ListItem', position: 4, name: 'ADHD Cleaning Planner Notebook', url: 'https://925adhd.com/free/best-adhd-products#planners' },
+    { '@type': 'ListItem', position: 5, name: 'Panda Planner', url: 'https://925adhd.com/free/best-adhd-products#planners' },
+    { '@type': 'ListItem', position: 6, name: 'Clever Fox Planner Pro', url: 'https://925adhd.com/free/best-adhd-products#planners' },
+    { '@type': 'ListItem', position: 7, name: 'Rocketbook Fusion', url: 'https://925adhd.com/free/best-adhd-products#planners' },
+    { '@type': 'ListItem', position: 8, name: 'Ticktime Cube', url: 'https://925adhd.com/free/best-adhd-products#timers' },
+    { '@type': 'ListItem', position: 9, name: 'Time Timer MOD (60-min)', url: 'https://925adhd.com/free/best-adhd-products#timers' },
+    { '@type': 'ListItem', position: 10, name: '3-in-1 Visual Timer with Planning Board', url: 'https://925adhd.com/free/best-adhd-products#timers' },
+    { '@type': 'ListItem', position: 11, name: 'Amazon Echo Dot', url: 'https://925adhd.com/free/best-adhd-products#timers' },
+    { '@type': 'ListItem', position: 12, name: "Tom's Flippy Chain", url: 'https://925adhd.com/free/best-adhd-products#fidgets' },
+    { '@type': 'ListItem', position: 13, name: 'Silicone Magnetic Fidget Balls (4-pack)', url: 'https://925adhd.com/free/best-adhd-products#fidgets' },
+    { '@type': 'ListItem', position: 14, name: 'Sensory Worry Stones (6-pack)', url: 'https://925adhd.com/free/best-adhd-products#fidgets' },
+    { '@type': 'ListItem', position: 15, name: "L'AGRATY Weighted Lap Blanket", url: 'https://925adhd.com/free/best-adhd-products#fidgets' },
+    { '@type': 'ListItem', position: 16, name: 'Govee RGBIC LED Strip', url: 'https://925adhd.com/free/best-adhd-products#lighting' },
+    { '@type': 'ListItem', position: 17, name: 'BenQ ScreenBar', url: 'https://925adhd.com/free/best-adhd-products#lighting' },
+    { '@type': 'ListItem', position: 18, name: 'Brain.fm', url: 'https://925adhd.com/free/best-adhd-products#audio' },
+  ],
+};
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What makes a product "ADHD-friendly"?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A product is ADHD-friendly when it lowers friction, requires little setup, gives clear feedback, and works the way your brain actually works on a hard day. Things like visual timers, tactile fidgets, and noise control reduce decision fatigue and sensory overload, the two biggest ADHD energy drains.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Have you actually tested these products?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Every product on this list is something we (or close ADHD friends and family) have personally used. Nothing is here just because it ranks in Amazon search or has a high commission rate. If something stops working for us, it gets removed.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you earn money if I buy through your links?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Most product links on this page are Amazon affiliate links, which means we earn a small commission at no extra cost to you if you buy something. This helps keep 925 ADHD running. We only recommend things we genuinely believe help.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are these only useful if I have diagnosed ADHD?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Most of these tools help anyone who struggles with focus, time blindness, sensory overload, executive function, or organization. You do not need a diagnosis to benefit from a visual timer, noise-canceling headphones, or a planner that fits how you actually live.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How often is this list updated?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We review the list every few months. Products that go out of stock, get worse, or get replaced by better options are removed. New picks are added when we find something that earns its spot, not on a fixed schedule.',
+      },
+    },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <BestAdhdProductsPage />
     </>
