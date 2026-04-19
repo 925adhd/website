@@ -70,12 +70,12 @@ const faqItems = [
   {
     question: 'Is this different from free Reddit lists like r/beermoney?',
     answer:
-      'Yes. Free lists are unvetted, unorganized, and rarely updated. 925 ADHD is curated specifically for ADHD brains — every option is tagged by energy level, effort, and payout speed, with step-by-step guides. Dead or scammy options are removed monthly.',
+      'Yes. Free lists are unvetted, unorganized, and rarely updated. 925 ADHD is curated specifically for ADHD brains. Every option is tagged by energy level, effort, and payout speed, with step-by-step guides. Dead or scammy options are removed monthly.',
   },
   {
     question: 'Do I get updates or is this a one-time thing?',
     answer:
-      'You get lifetime updates. New options are added monthly and outdated or scammy ones are removed. Your one-time payment covers everything — past, present, and future.',
+      'You get lifetime updates. New options are added monthly and outdated or scammy ones are removed. Your one-time payment covers everything: past, present, and future.',
   },
   {
     question: 'How do I request a refund?',

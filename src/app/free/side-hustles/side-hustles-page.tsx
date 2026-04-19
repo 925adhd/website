@@ -39,14 +39,14 @@ const hustles = [
     link: 'https://www.prolific.com/participants',
     whyAdhd: [
       'Short, structured tasks (5\u201320 min)',
-      'No disqualifications  — if you start, you get paid',
+      'No disqualifications: if you start, you get paid',
       'Guaranteed minimum \u00a36/hr (\u223c$8)',
       'Pick studies that interest you',
     ],
     howToStart: [
       'Sign up and verify your identity',
       'Complete your demographic profile (unlocks more studies)',
-      'Enable notifications  — best studies go fast',
+      'Enable notifications: best studies go fast',
       'Cash out at \u00a35 (\u223c$6) via PayPal',
     ],
     energyLevel: 'Low',
@@ -66,7 +66,7 @@ const hustles = [
     link: 'https://app.fieldagent.net/',
     whyAdhd: [
       'Short tasks (10\u201320 min) with clear instructions',
-      'Variety  — audits, mystery shops, buy & try',
+      'Variety: audits, mystery shops, buy & try',
       'Get outside and move around',
       'Instant dopamine from completing missions',
     ],
@@ -92,15 +92,15 @@ const hustles = [
     iconBg: 'bg-teal-100',
     link: 'https://www.respondent.io/',
     whyAdhd: [
-      'One-off sessions  — no long-term commitment to forget about',
+      'One-off sessions: no long-term commitment to forget about',
       'Novel + high stakes = your brain actually shows up',
-      'Just talk about your job or habits  — no skills needed',
+      'Just talk about your job or habits: no skills needed',
       'Pay is so high a single study can beat a week of surveys',
     ],
     howToStart: [
       'Sign up free and fill out your profile honestly',
       'Browse studies that match your job/industry',
-      'Apply with a short answer  — be specific, not generic',
+      'Apply with a short answer: be specific, not generic',
       'Get accepted, hop on a Zoom call, get paid via PayPal',
     ],
     energyLevel: 'Low',
@@ -119,7 +119,7 @@ const hustles = [
     iconBg: 'bg-amber-100',
     link: 'https://play.google.com/store/apps/details?id=us.current.android',
     whyAdhd: [
-      'Earn passively  — just use your phone normally',
+      'Earn passively: just use your phone normally',
       '16+ earning methods = no boredom',
       'Streaks and progress meters = dopamine hits',
       'Very low cashout minimum ($0.10)',
@@ -146,7 +146,7 @@ const hustles = [
     iconBg: 'bg-emerald-100',
     link: 'https://fetchrewards.com/',
     whyAdhd: [
-      'Zero thinking  — just scan any receipt',
+      'Zero thinking: just scan any receipt',
       'No coupons to clip, no offers to activate',
       'Gamified with streaks and bonuses',
       'Instant gratification seeing points add up',

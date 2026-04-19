@@ -329,7 +329,7 @@ export default function EnergyCheckerPage() {
               </button>
 
               <p className="text-xs text-brand-primary/40 mt-3">
-                Press Ctrl+Enter to submit. Powered by AI — use as a starting point, not a final answer.
+                Press Ctrl+Enter to submit. Powered by AI. Use as a starting point, not a final answer.
               </p>
             </motion.div>
           </div>

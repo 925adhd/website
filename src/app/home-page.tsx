@@ -93,7 +93,7 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="max-w-[720px] mx-auto mt-4 text-[14px] md:text-[17px] text-brand-primary/75 leading-relaxed px-2 md:px-0"
           >
-            70+ ADHD-friendly ways to earn online — tagged by energy, effort, and payout speed.
+            70+ ADHD-friendly ways to earn online, tagged by energy, effort, and payout speed.
           </motion.p>
 
           <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="flex flex-col items-center gap-3 mt-6 md:mt-8">

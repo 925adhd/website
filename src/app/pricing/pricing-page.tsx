@@ -20,7 +20,7 @@ const included = [
   'Energy-level tags (low, medium, high)',
   'Honest pros, cons, and effort ratings',
   'New options added monthly, dead ones removed',
-  'Lifetime updates — yours forever',
+  'Lifetime updates, yours forever',
   'No ads, no upsells, no subscriptions',
 ];
 
