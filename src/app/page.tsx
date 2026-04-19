@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ReactDOM from 'react-dom';
 import HomePage from './home-page';
 
 export const metadata: Metadata = {
@@ -122,6 +123,7 @@ const jsonLd = {
 };
 
 export default function Page() {
+  ReactDOM.preload('/1.webp', { as: 'image', fetchPriority: 'high' });
   return (
     <>
       <script

@@ -65,31 +65,45 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      </head>
       <body className="min-h-screen flex flex-col">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XJVMZ3B6S8"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="deferred-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XJVMZ3B6S8');
-          `}
-        </Script>
-        <Script id="facebook-pixel" strategy="lazyOnload">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '830474870030077');
-            fbq('track', 'PageView');
+            (function(){
+              var loaded = false;
+              function load(){
+                if (loaded) return;
+                loaded = true;
+                var s1 = document.createElement('script');
+                s1.async = true;
+                s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-XJVMZ3B6S8';
+                document.head.appendChild(s1);
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-XJVMZ3B6S8');
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                window.fbq('init', '830474870030077');
+                window.fbq('track', 'PageView');
+              }
+              var events = ['scroll','mousedown','touchstart','keydown','mousemove'];
+              events.forEach(function(ev){
+                window.addEventListener(ev, load, { once: true, passive: true, capture: true });
+              });
+              setTimeout(load, 5000);
+            })();
           `}
         </Script>
         <noscript>

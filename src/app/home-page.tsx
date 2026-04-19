@@ -130,7 +130,7 @@ export default function HomePage() {
           </motion.div>
 
           {/* Product Screenshots */}
-          <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.3 }} className="w-full max-w-[900px] mx-auto">
+          <div className="w-full max-w-[900px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
               {['/1.webp', '/2.webp'].map((src, i) => (
                 <div
@@ -151,7 +151,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
