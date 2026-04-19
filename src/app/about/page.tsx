@@ -7,11 +7,12 @@ export const metadata: Metadata = {
     'Meet Kara, the founder of 925 ADHD. Learn how her ADHD journey led to creating a platform that helps neurodivergent minds find flexible remote work.',
   alternates: { canonical: 'https://925adhd.com/about' },
   openGraph: {
+    type: 'website',
     title: 'About 925 ADHD: Why I Built This for ADHD Remote Workers',
     description:
       'Meet Kara, the founder of 925 ADHD. Learn how her ADHD journey led to creating a platform that helps neurodivergent minds find flexible remote work.',
     url: 'https://925adhd.com/about',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 

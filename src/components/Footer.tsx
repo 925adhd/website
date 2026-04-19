@@ -9,6 +9,7 @@ const footerLinks = [
   { href: '/contact', label: 'Contact' },
   { href: '/terms-of-service', label: 'Terms' },
   { href: '/privacy-policy', label: 'Privacy' },
+  { href: '/cookie-policy', label: 'Cookies' },
   { href: '/disclaimer', label: 'Disclaimer' },
 ];
 

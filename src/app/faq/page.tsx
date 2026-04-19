@@ -2,16 +2,17 @@ import type { Metadata } from 'next';
 import FaqPage from './faq-page';
 
 export const metadata: Metadata = {
-  title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started | 925 ADHD',
+  title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started',
   description:
     'Get answers to common questions about 925 ADHD, pricing, access, and how to start earning online with ADHD.',
   alternates: { canonical: 'https://925adhd.com/faq' },
   openGraph: {
-    title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started | 925 ADHD',
+    type: 'website',
+    title: 'ADHD Remote Work FAQ: Earnings, Legitimacy, Pricing & Getting Started',
     description:
       'Get answers to common questions about 925 ADHD, pricing, access, and how to start earning online with ADHD.',
     url: 'https://925adhd.com/faq',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 

@@ -2,16 +2,17 @@ import type { Metadata } from 'next';
 import MyStoryPage from './my-story-page';
 
 export const metadata: Metadata = {
-  title: 'My Story | 925 ADHD',
+  title: 'My Story',
   description:
     'The story behind 925 ADHD - How one mom with ADHD built a platform to help neurodivergent minds find flexible online work.',
   alternates: { canonical: 'https://925adhd.com/my-story' },
   openGraph: {
-    title: 'My Story | 925 ADHD',
+    type: 'website',
+    title: 'My Story',
     description:
       'The story behind 925 ADHD - How one mom with ADHD built a platform to help neurodivergent minds find flexible online work.',
     url: 'https://925adhd.com/my-story',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 

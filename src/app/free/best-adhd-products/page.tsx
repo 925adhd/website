@@ -2,16 +2,17 @@ import type { Metadata } from 'next';
 import BestAdhdProductsPage from './best-adhd-products-page';
 
 export const metadata: Metadata = {
-  title: '18 Best ADHD Products for Adults (2026 Tested Picks) | 925 ADHD',
+  title: '18 Best ADHD Products for Adults (2026 Tested Picks)',
   description:
-    '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness instead of hype. Honest picks across budgets.',
+    '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness, not hype.',
   alternates: { canonical: 'https://925adhd.com/free/best-adhd-products' },
   openGraph: {
-    title: '18 Best ADHD Products for Adults (2026 Tested Picks) | 925 ADHD',
+    type: 'website',
+    title: '18 Best ADHD Products for Adults (2026 Tested Picks)',
     description:
-      '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness instead of hype.',
+      '18 ADHD-friendly products tested by adults with ADHD. Focus tools, planners, fidgets, timers, and lighting, rated by usefulness, not hype.',
     url: 'https://925adhd.com/free/best-adhd-products',
-    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 

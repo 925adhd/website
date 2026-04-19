@@ -5,7 +5,7 @@ import HomePage from './home-page';
 export const metadata: Metadata = {
   title: '925 ADHD - 70+ Ways to Make Money Online for ADHD Minds | $9.25 One-Time',
   description:
-    'Find ADHD-friendly ways to make money online without the overwhelm. 70+ curated flexible work options, vetted and scam-free, with step-by-step guidance. No resumes required. One-time payment, lifetime access.',
+    'Find ADHD-friendly ways to make money online. 70+ vetted, scam-free flexible work options with step-by-step guidance. One-time payment, lifetime access.',
   alternates: {
     canonical: 'https://925adhd.com/',
   },

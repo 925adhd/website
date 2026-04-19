@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s | 925 ADHD',
   },
   description:
-    'Find ADHD-friendly ways to make money online without the overwhelm. 70+ curated flexible work options, vetted and scam-free, with step-by-step guidance. No resumes required. One-time payment, lifetime access.',
+    'Find ADHD-friendly ways to make money online. 70+ vetted, scam-free flexible work options with step-by-step guidance. One-time payment, lifetime access.',
   metadataBase: new URL('https://925adhd.com'),
   openGraph: {
     type: 'website',
@@ -71,6 +71,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
       <body className="min-h-screen flex flex-col">
+        <Script
+          id="ahrefs-analytics"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="CV27wylgQGSL0LfDXIkLxQ"
+          strategy="afterInteractive"
+        />
         <Script id="deferred-analytics" strategy="afterInteractive">
           {`
             (function(){

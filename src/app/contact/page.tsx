@@ -2,14 +2,17 @@ import type { Metadata } from 'next';
 import ContactPage from './contact-page';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | 925 ADHD',
-  description: "Get in touch with 925 ADHD - We'd love to hear from you!",
+  title: 'Contact Us',
+  description:
+    'Contact 925 ADHD with questions about pricing, access, refunds, or partnerships. We respond to emails within 48 hours on business days.',
   alternates: { canonical: 'https://925adhd.com/contact' },
   openGraph: {
-    title: 'Contact Us | 925 ADHD',
-    description: "Get in touch with 925 ADHD - We'd love to hear from you!",
+    type: 'website',
+    title: 'Contact Us',
+    description:
+      'Contact 925 ADHD with questions about pricing, access, refunds, or partnerships. We respond to emails within 48 hours on business days.',
     url: 'https://925adhd.com/contact',
-    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: '/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 
@@ -18,7 +21,7 @@ const jsonLd = {
   '@type': 'ContactPage',
   '@id': 'https://925adhd.com/contact#contact',
   url: 'https://925adhd.com/contact',
-  name: 'Contact Us | 925 ADHD',
+  name: 'Contact Us',
   inLanguage: 'en-US',
 };
 

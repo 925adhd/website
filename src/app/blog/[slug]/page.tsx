@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: 'Post Not Found' };
 
   return {
-    title: `${post.title} | 925 ADHD Blog`,
+    title: post.title,
     description: post.description,
     alternates: { canonical: `https://925adhd.com/blog/${post.slug}` },
     openGraph: {

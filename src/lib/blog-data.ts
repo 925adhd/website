@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'best-adhd-apps-for-adults',
     title: 'Best ADHD Apps & Productivity Tools 2026: 15 Tested for Focus & Organization',
     description:
-      'The best ADHD apps for adults, compared. We reviewed 15 apps for focus, organization, habits, content creation, and executive function — with pricing, pros, and honest picks.',
+      'The best ADHD apps for adults, compared. 15 apps reviewed for focus, organization, habits, and executive function, with pricing, pros, and honest picks.',
     category: 'Tools & apps',
     tags: ['ADHD', 'apps', 'tools', 'organization', 'productivity', 'free ADHD apps', 'ADHD productivity tools', 'best ADHD app'],
     publishedDate: '2026-01-15',
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'cant-work-9-to-5-with-adhd',
     title: "Can't Work a 9 to 5 With ADHD? You're Not Broken (Here's Why)",
     description:
-      "If you've searched \"can't work a 9 to 5 with ADHD,\" you're not lazy. Many ADHD brains struggle with rigid schedules. You don't need more discipline — you need a better fit.",
+      "If you've searched \"can't work a 9 to 5 with ADHD,\" you're not lazy. Many ADHD brains struggle with rigid schedules. You need a better fit, not more discipline.",
     category: 'ADHD & Work',
     tags: ['ADHD', 'work', 'burnout', 'executive dysfunction', '9 to 5'],
     publishedDate: '2026-02-01',
@@ -73,7 +73,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'freelance-jobs-for-adhd',
     title: 'Freelance Jobs for ADHD: 6 Paths That Actually Fit How Your Brain Works',
     description:
-      'Most freelance advice ignores ADHD. Here are 6 freelance paths that fit fluctuating energy, plus the ones to skip — with honest tradeoffs and how to start this week.',
+      'Most freelance advice ignores ADHD. 6 freelance paths that fit fluctuating energy, plus the ones to skip, with honest tradeoffs and how to start this week.',
     category: 'ADHD & Work',
     tags: ['ADHD', 'freelance', 'remote work', 'side hustle', 'self-employment'],
     publishedDate: '2026-04-07',

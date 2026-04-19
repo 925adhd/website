@@ -2,16 +2,17 @@ import type { Metadata } from 'next';
 import EnergyCheckerPage from './energy-checker-page';
 
 export const metadata: Metadata = {
-  title: 'Is This Worth My Energy? | Free ADHD Side Hustle Checker | 925 ADHD',
+  title: 'Is This Worth My Energy? Free ADHD Side Hustle Checker',
   description:
     'Free ADHD-friendly tool: paste any job, side hustle, or platform and get a clear breakdown of effort, red flags, and energy cost before you waste time.',
   alternates: { canonical: 'https://925adhd.com/free/energy-checker' },
   openGraph: {
-    title: 'Is This Worth My Energy? | Free ADHD Side Hustle Checker | 925 ADHD',
+    type: 'website',
+    title: 'Is This Worth My Energy? Free ADHD Side Hustle Checker',
     description:
       'Free ADHD-friendly tool: paste any job, side hustle, or platform and get a clear breakdown of effort, red flags, and energy cost before you waste time.',
     url: 'https://925adhd.com/free/energy-checker',
-    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo' }],
+    images: [{ url: 'https://925adhd.com/925-adhd-logo.png', alt: '925 ADHD Logo', width: 1200, height: 630 }],
   },
 };
 

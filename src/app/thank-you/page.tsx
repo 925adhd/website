@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Thank You | 925 ADHD',
+  title: 'Thank You',
   robots: { index: false, follow: false },
 };
 
